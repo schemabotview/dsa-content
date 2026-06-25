@@ -1,0 +1,5 @@
+Complexity summary.
+
+It is worth holding the cost of each heap operation in one place. Peeking at the minimum or maximum is constant time — it is just reading the root at index zero. Pushing a new element is logarithmic, because sift-up climbs at most the height of the tree. Popping the minimum or maximum is also logarithmic, because sift-down descends at most the height.
+
+Building a heap from an existing array is linear time using the bottom-up sift-down approach — better than the n log n you would get from pushing elements one at a time. And heap sort, which uses a heap to sort an entire array, is n log n in all cases. The headline is the combination that makes heaps special: constant-time access to the extreme element, with only logarithmic cost to insert or remove.

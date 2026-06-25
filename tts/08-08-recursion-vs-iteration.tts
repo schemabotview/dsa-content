@@ -1,0 +1,9 @@
+Recursion versus iteration.
+
+Recursion and iteration are equally powerful — anything you can do with recursion you can do with iteration, and vice versa. The choice is about clarity and practicality.
+
+Use recursion when the problem is naturally recursive. Trees, graphs, divide-and-conquer, and structural problems on nested data all express cleanly as recursive functions. The code tends to match the mental model of the problem.
+
+Use iteration when the recursion depth is unbounded or when performance is critical. Iterative code carries no per-call overhead from pushing and popping frames. And with an explicit stack — a plain list you manage yourself — you get the same logical structure as recursion without the depth limit.
+
+The key mental model to carry forward is this: the call stack is literally a stack. Making it explicit by using a list does not change the algorithm — it just makes the stack visible and removes the system-imposed depth ceiling.

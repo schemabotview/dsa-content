@@ -1,0 +1,7 @@
+Insert and sift up.
+
+When you insert a new value, you append it to the end of the array. This preserves the complete-tree shape. But the new value may be smaller than its parent, which would violate the heap property.
+
+To fix this, you sift up. Compare the new value with its parent. If it is smaller, swap them. Then compare again with the new parent. Keep swapping upward until the new value is no longer smaller than its parent, or until it reaches the root.
+
+Each swap moves up one level, and the tree has at most logarithmic height, so insertion costs at most logarithmic time.

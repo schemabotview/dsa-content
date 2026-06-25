@@ -1,0 +1,7 @@
+Floating-point types.
+
+Floating-point types store numbers with a decimal point. They follow the I-triple-E seven-five-four standard, which encodes a number as three components packed into a fixed number of bits.
+
+The first component is the sign bit — a single bit that determines whether the number is positive or negative. The second component is the exponent — eight bits for a float and eleven bits for a double — which encodes the scale of the number as a power of two. The third component is the mantissa, sometimes called the fraction — twenty-three bits for a float and fifty-two bits for a double — which stores the significant digits of the value.
+
+A float uses four bytes and gives you about seven significant decimal digits of precision. A double uses eight bytes and gives you fifteen to seventeen significant digits. Double is the default in most languages and the right choice for general-purpose decimal arithmetic. Float is used in performance-sensitive contexts like machine learning or graphics, where halving memory usage for large arrays of numbers makes a meaningful difference.

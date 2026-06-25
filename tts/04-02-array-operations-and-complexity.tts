@@ -1,0 +1,7 @@
+Array operations and complexity.
+
+Reading or updating an element by index costs constant time — one address calculation and you are there.
+
+Searching an unsorted array costs linear time in the worst case — you may have to inspect every element before finding the target or confirming it is absent. In a sorted array, binary search brings this down to logarithmic time by halving the search space at each step.
+
+The headline is that arrays give you the fastest possible access by index, but searching for a value you do not have the index of still means a scan, unless the data is sorted.

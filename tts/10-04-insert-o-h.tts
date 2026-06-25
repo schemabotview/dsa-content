@@ -1,0 +1,5 @@
+Insert.
+
+Insertion uses the same left-right navigation as search. You follow the path you would take to find the value, and when you fall off the edge of the tree, that empty slot is exactly where the new node belongs. A new value always arrives as a leaf.
+
+The key insight is that insertion never restructures the existing tree — it just attaches a new leaf at the correct position. This makes insertion fast, but it also means the shape of the tree depends entirely on the order values are inserted.

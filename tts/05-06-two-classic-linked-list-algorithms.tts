@@ -1,0 +1,7 @@
+Two classic linked list algorithms.
+
+The first is reversing a singly linked list — a classic pointer manipulation problem. You walk the list once with three variables: previous, current, and next. At each step, you save the next node before overwriting anything, flip the current node's next pointer to point backward to previous, then advance both previous and current forward. When current reaches the end, previous is pointing at the new head. You flip one pointer per node, each flip is constant time, and you visit each node exactly once — linear time overall, with no extra memory beyond three pointer variables.
+
+The second is the fast and slow pointer technique, also known as Floyd's cycle detection. Imagine two runners on a circular track. One runs at normal speed, the other twice as fast. If the track is a closed loop, the fast runner eventually laps the slow runner and they meet. If the track has an end, the fast runner reaches it first and they never meet. Applied to a linked list, a slow pointer advances one node at a time and a fast pointer advances two. If there is a cycle, they land on the same node. If not, the fast pointer reaches the end. It uses constant extra space and runs in linear time — no visited set needed.
+
+The same fast and slow technique finds the middle of a list without knowing its length. Start both at the head, advance slow by one and fast by two. When fast reaches the end, slow is sitting exactly at the middle, because fast covers twice the distance.

@@ -1,0 +1,13 @@
+Value types versus reference types.
+
+This is one of the most important distinctions in all of programming, and it directly shapes how data structures behave.
+
+A value type stores its data directly inside the variable. When you copy a value type variable into another variable, you get a completely independent copy of the data. Changing one does not affect the other. Primitive types — integers, booleans, characters — behave this way. They live on the stack, right inside the variable's slot.
+
+A reference type works differently. The variable does not hold the data itself. Instead, it holds an address — a pointer to where the real object lives on the heap. When you copy a reference type variable into another variable, both variables now hold the same address, meaning they both point to the same object. If you change the object through one variable, the other variable sees the change too, because they are looking at the same place in memory.
+
+Here is a concrete way to think about it. Imagine you have a document on your desk — that is a value type. If you photocopy it and give the copy to a colleague, you each have your own version. Now imagine a shared document on a company server, and you give a colleague the link — that is a reference type. You both have the link, but there is only one document. If either of you edits it, you both see the change.
+
+A short demonstration makes this vivid. Assign forty-two to a, then assign a to b. Both names point to the same cached integer. Now create a list holding one, two, three, and assign it to a second name. Appending four through the second name does not just add to that name — it mutates the single list that both names point to. Both names show one, two, three, four. Assignment never copied the list — it only copied the reference.
+
+In Kotlin the contrast is sharper, because primitives really are values. Setting b equal to a and then changing b leaves a untouched, since b got its own independent copy on the stack. But a mutable list behaves exactly like Python — both names reference the same object, and a change through one is visible through the other.

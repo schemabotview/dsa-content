@@ -1,0 +1,7 @@
+Heap implementation from scratch.
+
+The other core operation is extracting the minimum — the root. You cannot simply delete it, because that would leave a gap at the top of the tree. Instead, you swap the root with the last element in the array, then remove the last element. The root position now holds what used to be a leaf, which is likely larger than its children.
+
+To restore the heap property, you sift down. Compare the new root with its two children. If it is larger than either child, swap it with the smaller of the two. Repeat this process down the tree until the element is smaller than both children, or reaches a leaf. Again, at most logarithmic swaps.
+
+Peek — reading the current minimum without removing it — is just reading index zero. That is constant time. With sift-up for insertion and sift-down for extraction, you have a complete heap implementation.

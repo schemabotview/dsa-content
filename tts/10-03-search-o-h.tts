@@ -1,0 +1,7 @@
+Search.
+
+Searching in a binary search tree is guided at every step. You start at the root. If the target equals the current node's value, you are done. If the target is smaller, you go left — because every value to the right is already larger than the current node, and therefore larger than the target. If the target is larger, you go right. At each level you discard an entire half of the remaining tree.
+
+In the best case — a balanced tree — this halving means you reach your answer in logarithmic time. In the worst case — a degenerate tree where every node only has a right child, like a linked list — you may scan every node.
+
+The iterative version of search uses a loop rather than recursion, advancing a pointer left or right until it finds the target or falls off the tree.

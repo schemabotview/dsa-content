@@ -1,0 +1,9 @@
+Big O notation.
+
+Big O notation describes how an algorithm's runtime or memory usage grows relative to the size of its input. The input size is conventionally called n.
+
+There are three things to internalise about Big O. First, it describes growth, not absolute speed. An algorithm that scales well might still be slower than a simpler one for very small inputs — Big O tells you what happens as n gets large.
+
+Second, it drops constants and lower-order terms. Three n plus one hundred, and plain n, are both linear time. At large scale, the three and the hundred become irrelevant compared to the n.
+
+Third, it usually describes the worst case — the upper bound, the most demanding scenario your algorithm might encounter.

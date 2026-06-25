@@ -1,0 +1,11 @@
+Linked list versus array.
+
+The contrast between arrays and linked lists comes down to how they use memory.
+
+Arrays store elements in contiguous slots. Because every element is the same size and they sit side by side, the address of any element can be computed in one arithmetic step. That is why array index access is constant time. But inserting or deleting in the middle means shifting every element after the insertion point — linear time.
+
+Linked lists store nodes wherever the heap has space. Finding the element at index five means starting at the head and following five pointers — linear time. But inserting or deleting at a position you already have a reference to requires only updating one or two pointers — constant time, regardless of how long the list is.
+
+There is an important nuance here. The constant-time insert and delete only applies when you already have a reference to the node where the operation happens. If you first have to search for the right position, that search is linear — and the total cost is linear.
+
+Arrays also have a significant advantage that is easy to overlook: cache performance. Because array elements are contiguous, the processor can load several at once into its cache. Linked list nodes are scattered across the heap, so each pointer follow is a separate memory access that may cause a cache miss. For sequential iteration over large collections, arrays are often meaningfully faster in practice, even when the theoretical complexity is the same.

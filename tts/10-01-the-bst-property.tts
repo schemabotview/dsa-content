@@ -1,0 +1,7 @@
+The binary search tree property.
+
+A binary tree becomes a binary search tree the moment you add one rule: for every node, all values in its left subtree are smaller, and all values in its right subtree are larger.
+
+The ordering rule is recursive — it does not just apply to direct children, it applies to every descendant. Every value anywhere in the left subtree must be less than the current node's value. Every value anywhere in the right subtree must be greater.
+
+A direct consequence of this rule is that in-order traversal of a binary search tree always visits nodes in sorted ascending order. You recurse left as deep as possible, visit the current node, then recurse right. Because every left value is smaller and every right value is larger, the result is naturally sorted. That single constraint is enough to make search, insertion, and deletion all run in time proportional to the height of the tree — logarithmic when the tree is balanced.

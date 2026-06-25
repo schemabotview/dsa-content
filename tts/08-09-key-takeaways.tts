@@ -1,0 +1,9 @@
+Key takeaways.
+
+Every recursive function needs a base case to stop and a recursive case that moves toward the base case. A missing base case means infinite recursion and a stack overflow.
+
+Each recursive call pushes a stack frame. Frames are popped in last-in, first-out order as functions return — the call stack is a stack.
+
+Memoization caches the result of each unique subproblem, converting exponential recursion trees into linear work. Python's l-r-u cache decorator and a Kotlin mutable map both implement this pattern.
+
+Python's default recursion limit is one thousand frames. For deep recursion, convert to an explicit stack. Divide and conquer, structural recursion, and mathematical recursion are the three most common shapes — and you can always replace recursion with an explicit stack plus a loop.

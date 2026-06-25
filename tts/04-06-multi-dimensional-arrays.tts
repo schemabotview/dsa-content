@@ -1,0 +1,7 @@
+Multi-dimensional arrays.
+
+A two-dimensional array is an array of arrays — rows and columns, like a spreadsheet or a grid. Accessing any element still takes constant time, because each row is itself an array, and array access is always constant time.
+
+Two-dimensional arrays appear constantly in data structures and algorithms problems — as grids for graph traversal, as tables for dynamic programming, and as matrices for mathematical computations.
+
+One important trap in Python: if you create a two-dimensional grid by multiplying a row with the star operator and then multiplying that by a number of rows, you get a list of references all pointing to the same inner list. Modifying one row modifies every row, because they are all the same object. The correct approach is to use a list comprehension that creates a fresh inner list for each row independently.

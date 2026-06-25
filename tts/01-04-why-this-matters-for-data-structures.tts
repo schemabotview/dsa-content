@@ -1,0 +1,13 @@
+Why this matters for data structures.
+
+Everything you will learn in this course connects back to memory layout. Once you understand how data sits in memory, the performance characteristics of every data structure become obvious rather than something you memorise.
+
+Arrays store their elements in consecutive memory slots. Because each element is the same size, your program can calculate the address of any element instantly — it is just the starting address plus the index multiplied by the element size. That is why reading any element from an array takes constant time, no matter how large the array is.
+
+Linked lists take a different approach. Each node is a separate object on the heap, and each node holds a reference to the next one. The nodes can be scattered anywhere in memory. To reach the fifth node, you have to start at the first, follow its reference to the second, follow that to the third, and so on. That is why reading from a linked list takes linear time — you have to walk the chain.
+
+Hash maps use an array under the hood. When you insert a key-value pair, the hash map computes a number from the key and uses that number as an index into the underlying array. Because computing the index is just arithmetic, finding a value takes constant time on average.
+
+Trees and graphs are networks of nodes connected by references. Traversal cost depends on how many references you have to follow to reach your destination.
+
+The pattern that ties all of this together is straightforward. Contiguous memory gives you fast random access but makes insertions slow, because elements need to shift. Pointer-linked memory gives you flexible structure and fast insertions, but traversal must follow each reference one at a time.

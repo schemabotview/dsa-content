@@ -1,0 +1,5 @@
+Pattern two — grouping.
+
+Build a map from a canonical key to a list of all elements that share that key. The group anagrams problem is the classic example: sort each word alphabetically to get its canonical form, then group all words with the same sorted form. Words that are anagrams of each other will have identical sorted versions and end up in the same group.
+
+For the words eat, tea, tan, ate, nat, bat — sorting the letters of each gives the canonical keys a-e-t, a-e-t, a-n-t, a-e-t, a-n-t, a-b-t. A default-dict of lists keyed by canonical form ends up with three buckets: eat, tea, and ate share the key a-e-t; tan and nat share a-n-t; and bat sits alone under a-b-t.

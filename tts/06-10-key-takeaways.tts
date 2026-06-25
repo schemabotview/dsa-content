@@ -1,0 +1,9 @@
+Key takeaways.
+
+A stack is last in, first out. Push and pop happen at the same end. All core operations are constant time. Use a list in Python, array-deque in Kotlin.
+
+A queue is first in, first out. Enqueue at the rear, dequeue from the front. All core operations are constant time. Use deque in Python — never list pop-zero, which is linear. Use array-deque in Kotlin.
+
+A deque is the generalisation — constant time at both ends.
+
+The balanced parentheses problem is the canonical stack application — push openers, pop and match closers. The monotonic stack solves next greater element and similar problems in linear time. Breadth-first search is the canonical queue application, giving level-by-level traversal. And the monotonic deque solves sliding window maximum in linear time by maintaining decreasing order and evicting out-of-window indices.

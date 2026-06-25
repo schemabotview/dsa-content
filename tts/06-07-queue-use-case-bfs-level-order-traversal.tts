@@ -1,0 +1,5 @@
+Queue use case — breadth-first search and level-order traversal.
+
+Breadth-first search is the most natural use of a queue. The algorithm explores a graph level by level — all nodes one step away from the start are visited before any nodes two steps away, and so on. A queue enforces this ordering automatically: nodes are enqueued when they are discovered and dequeued when they are processed, so the first discovered nodes are always processed first.
+
+The algorithm starts by enqueuing the starting node and marking it as visited. Then, while the queue is not empty, it dequeues the front node, processes it, and enqueues all of its unvisited neighbours. Because nodes are processed in the order they were discovered, the result is guaranteed to be level-by-level — the defining property of breadth-first search.

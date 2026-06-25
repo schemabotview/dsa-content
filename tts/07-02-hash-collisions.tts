@@ -1,0 +1,5 @@
+Hash collisions.
+
+Two different keys can sometimes produce the same bucket index. This is called a collision. The most common way to handle it is called separate chaining: each bucket holds a small list of all the key-value pairs that mapped to it. On lookup, you hash to the bucket and then scan that list for the exact key you want.
+
+In practice, a well-designed hash function distributes keys evenly, keeping bucket lists very short — typically length one. So although a collision sounds like a problem, with a good hash function it is a rare and cheap event.

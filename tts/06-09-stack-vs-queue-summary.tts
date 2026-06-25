@@ -1,0 +1,7 @@
+Stack versus queue — a summary.
+
+The fundamental difference is the order in which elements leave. A stack reverses the insertion order — last in, first out. A queue preserves the insertion order — first in, first out.
+
+Stacks naturally model anything that needs to be unwound in reverse: function calls return in the reverse order they were made, undo operations reverse the most recent action first, and depth-first search backtracks in the reverse order of how paths were explored.
+
+Queues naturally model anything that should be processed in arrival order: tasks are handled in the order they were submitted, levels of a tree or graph are explored in the order they were discovered, and messages in a pipeline are processed in the sequence they arrived.

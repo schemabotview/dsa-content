@@ -1,0 +1,7 @@
+Hash set.
+
+A hash set is a hash map with no values — only keys. It answers one question in constant time: is this element in the set? It also supports the full vocabulary of set mathematics: union, intersection, difference, and subset checks.
+
+Use a set whenever you need to eliminate duplicates, check membership quickly, or compute relationships between two collections. In Python the set literal uses curly braces. In Kotlin, mutable-set-of creates a mutable set.
+
+The four set operations are intuitive. Union gives you every element that appears in either set. Intersection gives you only elements that appear in both. Difference gives you elements in the first set but not the second. And symmetric difference gives you elements that appear in exactly one of the two sets but not both. Taking set A as one through five and set B as three through seven, union is one through seven, intersection is three, four, five, and the difference of A and B is one and two.

@@ -1,0 +1,9 @@
+Delete.
+
+Deletion has three cases depending on how many children the target node has.
+
+The first case is the simplest: the node is a leaf. It has no children, so you simply remove it — the parent's pointer to it is set to null.
+
+The second case is a node with exactly one child. You bypass the node and connect its parent directly to its one child. The child is promoted one level up, and the deleted node is gone.
+
+The third case is the hardest: the node has two children. You cannot simply remove it, because that would disconnect part of the tree. The solution is to find the node's in-order successor — the minimum value in its right subtree — copy that successor's value into the current node, and then delete the successor from the right subtree. The successor is guaranteed to have at most one child, so that deletion reduces to case one or case two. The result is a valid binary search tree with the ordering property maintained throughout.

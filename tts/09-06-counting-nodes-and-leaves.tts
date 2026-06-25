@@ -1,0 +1,7 @@
+Counting nodes and leaves.
+
+Both operations follow the same combine-the-subtrees pattern.
+
+To count all nodes, the total is one plus the count from the left subtree plus the count from the right subtree. To count only leaves, a node contributes one if it has no children and zero otherwise, with the results from the left and right subtrees added together.
+
+This is the recursive skeleton you will see again and again with trees: solve the problem for the left subtree, solve it for the right subtree, and combine those two answers with whatever the current node contributes.

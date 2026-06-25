@@ -1,0 +1,5 @@
+Checking if a tree is balanced.
+
+A height-balanced binary tree is one where, for every node, the heights of its left and right subtrees differ by at most one. This is the property that keeps all operations at logarithmic time.
+
+The naive approach computes height separately for every node, leading to n log n time overall. The efficient approach makes a single post-order pass. At each node you compute both the height and whether the subtree is balanced simultaneously. If either child is unbalanced, or if the height difference exceeds one, the whole subtree is unbalanced. This gives linear time — one pass, done.

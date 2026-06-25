@@ -1,0 +1,7 @@
+Best, worst, and average case.
+
+The same algorithm can behave very differently depending on the input it receives. The best case is the most favourable input possible — the one that lets the algorithm finish as quickly as it ever can. The worst case is the most demanding input — the one that forces the algorithm to do the maximum amount of work. The average case is the expected performance across typical inputs.
+
+In practice, worst case is what matters most. It is the guarantee you can give. When someone asks what the complexity of your algorithm is, they almost always mean worst case.
+
+Linear search is a clear illustration. The best case is constant time — the target happens to be the very first element. The worst case is linear time — the target is last, or not in the list at all. The average case is also linear time, because on average you check half the elements, and half of n is still proportional to n.

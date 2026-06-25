@@ -1,0 +1,7 @@
+Insert and delete — the shifting cost.
+
+Inserting at the end of an array costs constant time on average — you just write to the next available slot. But inserting anywhere else — at the front or in the middle — requires shifting every element after the insertion point one position to the right to make room. In the worst case, inserting at the very front shifts every element, giving you linear time.
+
+Deletion works the same way in reverse. Removing the last element is instant. Removing from the front or middle requires shifting the remaining elements left to close the gap — linear time again.
+
+The key insight is that arrays pay for their constant-time access with expensive insertions and deletions in the middle. This trade-off is fundamental, and it drives many of the decisions you will make when choosing data structures.

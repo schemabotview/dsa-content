@@ -1,0 +1,7 @@
+Binary search tree performance.
+
+All binary search tree operations take time proportional to the height. On a perfectly balanced tree the height is the logarithm of the number of nodes, so all operations are logarithmic. On average, random insertions also produce a tree of logarithmic height.
+
+The worst case is sorted insertion. If you insert the values one through ten in order, each new value is larger than everything before it and lands as the rightmost leaf. The result is a chain going straight right — a degenerate tree with height equal to the number of nodes. Search, insert, and delete all degrade to linear time.
+
+Self-balancing binary search trees — such as A-V-L trees and red-black trees — automatically rebalance after every insertion and deletion, keeping the height logarithmic in all cases. These are the data structures that power the tree-map in Kotlin and Java, and the sorted-dict in Python's sorted-containers library. When you need guaranteed logarithmic performance on a sorted key structure, reach for one of these rather than a plain binary search tree.

@@ -1,0 +1,9 @@
+Key takeaways.
+
+A binary tree is a hierarchical structure where every node has at most two children. The height of the tree determines the cost of operations — logarithmic for a balanced tree, linear for a degenerate one.
+
+The four standard traversals are in-order for sorted access, pre-order for serialisation, post-order for bottom-up evaluation or deletion, and level-order for processing nodes level by level.
+
+All depth-first traversals share the same recursive skeleton — the only difference is when you visit the current node relative to its children.
+
+Level-order uses a queue, not a stack. Enqueue children left-to-right and process one full level before moving to the next. And a balanced tree check runs in linear time by combining height computation and balance verification in a single post-order pass.

@@ -1,0 +1,5 @@
+Pattern one — frequency counting.
+
+Build a map from each element to the number of times it appears — one pass, linear time. From that frequency map you can check anagrams, find the most common elements, detect imbalances, and much more.
+
+In Python the Counter makes this a single line: pass it a string or a list and it returns the full frequency table. Anagram checking, for instance, reduces to comparing the frequency maps of two strings — if the counts match, the strings are anagrams of each other.

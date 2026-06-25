@@ -1,0 +1,15 @@
+What is ram.
+
+Ram stands for random access memory. It is your computer's working memory — the space where everything your program uses while it is running lives. Think of it as a very long row of small numbered slots, where each slot holds exactly one byte — eight bits of information.
+
+When your program starts, the operating system gives it a chunk of ram to work with. From that point on, every variable, every object, every data structure you create is just bytes occupying some of those slots.
+
+Two properties make ram powerful. First, random access — you can jump to any slot instantly, regardless of where you currently are. The first slot and the ten millionth slot take the same amount of time to reach. Second, every slot has a unique address — a number that identifies exactly where it lives. Your program finds data by its address.
+
+The smallest unit of storage is a bit — a single zero or one. Eight bits form a byte, and a byte is the smallest unit that ram can address individually. Each byte has a unique memory address. Addresses are typically written in hexadecimal, but you can think of them as plain numbers counting up from zero.
+
+When you store an integer, it does not fit in one byte. A standard integer takes four bytes, so it occupies four consecutive addresses. A single character takes one byte. A sixty-four bit floating point number takes eight bytes. The key point is that every piece of data has a starting address and a known size, and the two together tell you exactly which bytes belong to it.
+
+To put it another way — imagine a row of numbered boxes at a post office. Each box holds a fixed amount. When you rent four consecutive boxes starting at number one hundred, anyone who knows the starting number and the count can find your parcel immediately. That is exactly how your program finds a value in memory.
+
+To see this concretely, you can ask Python how many bytes a value takes and where it lives. The size-of function reports the byte count, and the id function returns the address. Python reports more than the raw four bytes you might expect, because it wraps every value in an object with extra metadata like its type and a reference count. In Kotlin on the java virtual machine, the primitive widths are exact — integer size in bytes returns four, long returns eight, and char returns two, because Kotlin uses U-T-F sixteen for characters. Python prioritizes flexibility and pays for it in bytes, while Kotlin gives you the lean primitive when you ask for one.

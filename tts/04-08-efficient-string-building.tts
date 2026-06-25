@@ -1,0 +1,7 @@
+Efficient string building.
+
+Immutability has a practical consequence that catches many programmers off guard. Concatenating strings together with a plus sign inside a loop is a performance trap. Each iteration allocates a new string and copies all the characters accumulated so far. After n iterations you have copied one plus two plus three, all the way up to n characters. That total is proportional to n squared — quadratic time.
+
+The correct approach is to collect all the pieces in a list and join them in a single operation at the end. Python's join method allocates one string of exactly the right size and fills it in one pass — linear time. Kotlin's string builder works the same way, buffering characters internally and building the final string once when you call to-string.
+
+The rule is simple: if you are building a string inside a loop, never use plus. Collect parts and join once at the end.

@@ -1,0 +1,7 @@
+When to use a linked list.
+
+Reach for a linked list when you need frequent insertions and deletions at the head or tail — implementing a queue is the classic example. The doubly linked list with sentinel nodes is the backbone of the least recently used cache pattern, where you need constant-time insert, delete, and reorder.
+
+Prefer an array when you need fast index access, when you iterate sequentially and care about cache performance, or when memory overhead matters.
+
+In day-to-day Python code, the built-in list covers most needs. Use deque when you need constant-time operations at both ends. Reach for a custom linked list when the problem specifically requires pointer manipulation — which happens often in interview questions but rarely in production code.

@@ -1,0 +1,7 @@
+Integer overflow.
+
+In languages with fixed-size integers like Kotlin and Java, adding one to the maximum value does not produce an error — it wraps around silently to the minimum value. This is called overflow, and it is a frequent source of bugs in loop counters, array indices, and financial calculations.
+
+Imagine a car odometer that rolls over from nine nine nine nine nine back to zero. The car did not break — it just ran out of digits. That is exactly what happens with integer overflow. The value wraps around to the other end of the range.
+
+Python is immune to overflow because its integers grow dynamically. In Kotlin, if you take the maximum int value and add one to it, you get the minimum int value — negative two billion — with no warning. The safe approach is to use a long whenever there is any chance of the value exceeding two billion.

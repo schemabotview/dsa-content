@@ -1,0 +1,11 @@
+Key takeaways.
+
+Primitive types are fixed-size values that map directly to bytes in memory. Their size determines their range, their speed, and their memory footprint.
+
+For integers, use int as the default. Switch to long when values can exceed about two billion. Be aware that in Kotlin, integer overflow wraps silently — Python is immune.
+
+For decimal numbers, use double for general arithmetic. Never use float or double for money or anything requiring exact decimal results — use Decimal in Python or Big Decimal in Kotlin.
+
+Characters are just numbers. The A-S-C-I-I tricks — letter minus A for an alphabetic index, digit minus zero for a numeric value — appear constantly in string and array problems.
+
+Python is dynamic and wraps everything in heap objects. Kotlin is static and uses true stack-allocated primitives for local variables, with boxing when primitives go into collections. And type conversion is always explicit — both languages require you to be clear about what you want, which prevents silent precision loss.

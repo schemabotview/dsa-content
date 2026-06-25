@@ -1,0 +1,11 @@
+Integer types.
+
+Integers store whole numbers. The difference between integer types is how many bytes they use — and therefore what range of values they can represent.
+
+A byte uses one byte of memory and can hold values from negative one twenty-eight to positive one twenty-seven. A short uses two bytes. An int uses four bytes and covers roughly plus or minus two point one billion. A long uses eight bytes and can hold numbers up to about nine point two times ten to the eighteenth power — far larger than anything you will encounter in most programs.
+
+The formula behind these ranges is straightforward. An n-bit signed integer can hold values from negative two to the power of n minus one, up to two to the power of n minus one, minus one. One bit is used for the sign; the remaining bits encode the magnitude.
+
+In practice, int is the right default for almost all whole-number work. Switch to long when values can exceed two billion — for example, timestamps measured in milliseconds, file sizes, or very large counts. Byte and short are mainly useful in memory-constrained environments or when working with binary data protocols.
+
+Python handles integers differently. Python integers have no fixed size — they grow automatically to accommodate any value, no matter how large. Two to the power of one hundred is just as easy for Python as the number forty-two. The trade-off is that Python integers are heap-allocated objects with extra overhead, not lean four-byte values sitting on the stack. The same variable silently grows its underlying storage as the value gets bigger — something a fixed-size Kotlin int simply cannot do.

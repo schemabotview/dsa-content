@@ -1,0 +1,7 @@
+Binary trees.
+
+A binary tree is a tree where every node has at most two children, called the left child and the right child.
+
+There are a few important shapes worth knowing. A full binary tree is one where every node has either zero or two children — never just one. A complete binary tree has all levels fully filled except possibly the last, and the last level is filled from left to right — this is the shape used by heaps. A perfect binary tree has every internal node with exactly two children and all leaves at the same depth. And a balanced binary tree is one where the height stays proportional to the logarithm of the number of nodes — no subtree is dramatically taller than the other.
+
+A perfect binary tree of height h contains exactly two to the power of h plus one, minus one nodes. This exponential relationship is why balanced trees give you logarithmic operations — the height is logarithmic in the number of nodes.

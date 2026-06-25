@@ -1,0 +1,9 @@
+Singly linked list — implementation.
+
+A singly linked list is the basic form — each node has a value and a single next pointer. The two most common operations are prepending at the head and appending at the tail.
+
+Prepending at the head is constant time: create a new node, set its next pointer to the current head, then update the head reference to the new node. Two steps, done.
+
+Appending at the tail without a tail pointer requires walking the entire list to find the last node — linear time. This is why many implementations keep a separate tail reference alongside the head, making tail append constant time as well.
+
+To make this tangible, imagine a list holding five, ten, thirty, fifty, twenty. To insert ninety-nine after the value thirty, the algorithm walks the chain until it finds the node holding thirty. Then it creates a new node holding ninety-nine, sets the new node's next pointer to whatever thirty was pointing at — fifty — and finally sets thirty's next pointer to the new node. The chain now reads five, ten, thirty, ninety-nine, fifty, twenty. Two pointer updates, regardless of list length — though finding the target by value first is linear.

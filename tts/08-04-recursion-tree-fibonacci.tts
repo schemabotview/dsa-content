@@ -1,0 +1,7 @@
+Recursion tree — Fibonacci.
+
+The Fibonacci sequence is defined recursively: the nth Fibonacci number equals the sum of the two before it, with base cases of zero and one at positions zero and one respectively. The naive recursive implementation looks clean, but it hides a severe problem — it recomputes the same subproblems many times.
+
+Imagine drawing the recursion as a tree. At the root sits the call for fib of five. It branches into fib of four and fib of three. Each of those branches again. If you trace all the paths, fib of three is computed twice, and fib of two is computed three times. For fib of fifty, the tree would have trillions of nodes — the time complexity is exponential, growing roughly as two to the power of n.
+
+You can confirm this by counting function calls. For fib of five the call count is around fifteen. For fib of thirty it exceeds two million. The result is the same, but the work explodes.

@@ -1,0 +1,7 @@
+Heap property and array storage.
+
+A heap is a complete binary tree with one additional rule: every node must be smaller than or equal to its children. A min-heap satisfies this at every node — the parent's value is less than or equal to both of its children's values, and this holds recursively throughout the entire tree. A max-heap is the mirror image: every parent is greater than or equal to its children. That rule means the minimum element of a min-heap is always sitting at the root, accessible in constant time.
+
+Because a heap is always a complete binary tree — all levels filled except possibly the last, which fills left to right — it can be stored in a plain array without any pointers. The position of a node in level-order traversal maps directly to its index.
+
+For a zero-indexed array, the formulas are simple. The parent of index i is at index i minus one, divided by two using floor division. The left child of index i is at two times i plus one. The right child is at two times i plus two. The minimum in a min-heap is always at index zero. Take the min-heap stored as the array one, three, five, eight, four, six, nine — index zero holds one, the minimum, and the heap property holds at every node, with no pointers needed. The array layout is the tree.

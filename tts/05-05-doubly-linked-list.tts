@@ -1,0 +1,9 @@
+Doubly linked list.
+
+A doubly linked list adds a second pointer to every node — a previous pointer that points backward to the preceding node. This gives you two important capabilities.
+
+First, backward traversal — you can walk the list in either direction. Second, and more importantly for algorithms, you can delete any node in constant time if you have a direct reference to it. With a singly linked list, deleting a node requires finding its predecessor first, which is linear. With a doubly linked list, the previous pointer gives you the predecessor immediately. The trade-off is memory — every node now stores two pointers instead of one.
+
+A common implementation technique is to use sentinel nodes — a dummy head and a dummy tail that are always present even when the list is empty. This eliminates all the special-case logic you would otherwise need for inserting into an empty list or deleting the first or last real node. All operations become uniform: every real node always has both a valid previous and a valid next.
+
+Python's built-in deque — short for double-ended queue — is implemented as a doubly linked list. It gives constant-time append and pop from both ends, which makes it the right tool whenever you need a queue.

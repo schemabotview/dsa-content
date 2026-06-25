@@ -1,0 +1,7 @@
+Common patterns in array and string problems.
+
+Two patterns come up in array and string problems more than almost any others.
+
+The first is prefix sums. A prefix sum array stores the cumulative total at each position. You build it in a single pass — linear time — and once it exists, you can answer any range sum query in constant time. Instead of adding up all the elements between two indices every time, you subtract two values from the prefix array. Concretely, you allocate a prefix array one slot longer than the input, with a leading zero, then walk the input writing the running total into the next slot. A range query from index l to index r then reduces to prefix at r plus one, minus prefix at l. This turns repeated linear work into a one-time linear setup followed by constant-time queries.
+
+The second is frequency counting. When you need to know how often each element appears — in an array of numbers or a string of characters — you make a single pass and tally counts. For lowercase letters specifically, a fixed-size array of twenty-six integers is faster and simpler than a hash map. The index for each character is computed by subtracting the character a from the current character, giving you a number from zero to twenty-five. Increment that slot for every character, and after one pass you have the full frequency table.

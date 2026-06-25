@@ -1,0 +1,11 @@
+Key takeaways.
+
+Arrays store elements in contiguous memory. Index access is constant time, because the address is arithmetic, not a search.
+
+Insertion and deletion in the middle are linear time — elements must shift. At the end they are constant time on average.
+
+Python lists are dynamic arrays that resize by doubling. The amortised append cost is constant time, but each element is a pointer to a heap object.
+
+Strings are immutable in both Python and Kotlin. Building a string with plus in a loop is quadratic. Use join in Python or string builder in Kotlin.
+
+For two-dimensional arrays in Python, always use a list comprehension to initialise — never the star shortcut, which copies references instead of creating independent rows. And the two most useful preprocessing patterns are prefix sums for range queries and frequency arrays for character or element counts.

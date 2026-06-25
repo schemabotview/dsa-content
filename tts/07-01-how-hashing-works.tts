@@ -1,0 +1,7 @@
+How hashing works.
+
+Under the hood, a hash map is an array of buckets. To store a key-value pair, the map passes the key through a hash function — a deterministic function that converts the key into an integer. It then takes that integer modulo the array size to get a bucket index, and stores the key-value pair in that bucket.
+
+To retrieve a value, it performs exactly the same steps: hash the key, compute the index, go directly to that bucket. No searching, no scanning — just arithmetic. That is why hash map access is constant time on average.
+
+The formula is straightforward: the bucket index equals the hash of the key, modulo the table size. The hash function is deterministic — the same key always produces the same integer — so the same arithmetic always leads back to the same bucket.

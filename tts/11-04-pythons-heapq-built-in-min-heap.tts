@@ -1,0 +1,7 @@
+Python's heapq — the built-in min-heap.
+
+Python provides a module called heap-q that gives you heap operations on a plain list. It is always a min-heap. You call heapify to convert an existing list in place in linear time. You call heap-push to insert in logarithmic time. You call heap-pop to remove the minimum in logarithmic time. To peek, you just read index zero directly.
+
+There is no built-in max-heap in heap-q. The standard workaround is to negate all values before pushing and negate again after popping. Pushing negative eight behaves as if you pushed eight into a max-heap — the most negative value, which is the largest original value, bubbles to the top. Python also provides n-smallest and n-largest functions, which return the k smallest or k largest elements in n log k time using a heap internally.
+
+Kotlin and Java use the priority-queue class from the standard library. By default it is a min-heap. To create a max-heap, you pass a reverse comparator when constructing it, and for custom objects you supply a comparator that tells the queue which field to compare. The offer method inserts, poll removes the top element, and peek reads it without removing.

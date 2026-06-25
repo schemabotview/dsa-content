@@ -1,0 +1,7 @@
+Stack use case — evaluating expressions and the monotonic stack.
+
+A monotonic stack is a stack that maintains its elements in sorted order — either always increasing or always decreasing from bottom to top. The way you enforce this order is by popping elements that would violate it before pushing the new one.
+
+This pattern solves a whole family of problems efficiently. The next greater element problem asks: for each element in an array, what is the first element to its right that is larger? With a brute-force nested loop this takes quadratic time. With a monotonic stack it takes linear time.
+
+The idea is to walk the array left to right, maintaining a stack of indices whose answers have not yet been found. When you encounter a new value, it is the next greater element for every smaller value still waiting in the stack. Pop those, record their answers, then push the current index. Because each element is pushed and popped at most once, the total work is linear.

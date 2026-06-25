@@ -1,0 +1,13 @@
+The common complexity classes.
+
+Constant time means the operation takes the same amount of time regardless of input size. Accessing an element in an array by index is a good example. Your program calculates the memory address directly from the index — no searching, no looping. Whether the array has ten elements or ten million, the lookup takes the same number of steps.
+
+Logarithmic time means each step eliminates a fixed fraction of the remaining work — typically half. The classic example is binary search. You look at the middle element of a sorted list. If it is too small, you discard the entire left half. If it is too large, you discard the entire right half. At each step the problem shrinks by half. A dataset of one billion elements needs at most thirty steps. A useful intuition: if doubling n only adds one more step, the algorithm is logarithmic.
+
+Linear time means the work grows in direct proportion to the input size. Scanning every element once is linear — double the input, double the work. Finding the maximum value in an unsorted list requires one full pass. Linear time is very often acceptable, and sometimes unavoidable.
+
+Linearithmic time, or n log n time, sits just above linear. It is the complexity of the most efficient general-purpose sorting algorithms — merge sort, heap sort, and the built-in sort. The way to think about it is this: the algorithm divides the problem in half at each level, which gives you a logarithmic number of levels, and then does linear work at each level. At one million elements, that means roughly twenty million operations. Quadratic time, by contrast, means one trillion.
+
+Quadratic time is usually the result of a nested loop where each loop runs n times. For every element, you process every other element. It is manageable at small sizes — hundreds of elements — but painful at thousands and unusable at millions. Bubble sort is the textbook example.
+
+Exponential time means adding one element to the input doubles the work. Generating all possible subsets of a set is exponential — each element is either included or excluded, which gives you two to the power of n combinations. Exponential algorithms are only practical for very small inputs, roughly fewer than twenty-five elements.

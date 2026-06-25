@@ -1,0 +1,7 @@
+Hash map operations.
+
+Creating, reading, updating, and deleting entries are all constant time on average.
+
+In Python, the dictionary is the built-in hash map. Square bracket notation reads or writes a value by key. The get method reads safely — if the key is absent it returns a default value instead of raising an error, which is often what you want. The in operator checks membership in constant time. Iterating over key-value pairs with the items method touches every entry and takes linear time overall.
+
+In Kotlin, mutable-map-of creates a mutable hash map. Bracket notation reads and writes. The get-or-default method works like Python's get. The remove method deletes an entry. Iterating with a destructuring for loop gives you key and value together.

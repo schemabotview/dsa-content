@@ -1,0 +1,5 @@
+Build a balanced binary search tree from a sorted array.
+
+If you are given a sorted array and want to build a balanced binary search tree from it, the strategy is to always pick the midpoint of the current subarray as the root. The elements to the left of the midpoint become the left subtree, and the elements to the right become the right subtree. Applying this recursively produces a perfectly balanced tree.
+
+To trace this on the sorted array one through seven: the midpoint is four — that becomes the root. The left half — one, two, three — recursively becomes the left subtree, with two as its root. The right half — five, six, seven — recursively becomes the right subtree, with six as its root. One, three, five, and seven all end up as leaves. The result is a perfect tree with seven nodes and height two — the minimum possible. This technique is linear time, because every element is visited exactly once.

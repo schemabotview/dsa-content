@@ -1,0 +1,5 @@
+Validate a binary search tree.
+
+A common mistake when validating a binary search tree is to check only that each node's left child is smaller and right child is larger. This is not sufficient. Consider a node deep in the left subtree that happens to be larger than the root — the local check passes, but the global ordering is violated.
+
+The correct approach threads a valid range down through the recursion. Every node must have a value strictly between a lower bound and an upper bound. The root starts with bounds of negative infinity and positive infinity. When you go left, the upper bound tightens to the current node's value. When you go right, the lower bound tightens. Any node that falls outside its range means the tree is invalid.

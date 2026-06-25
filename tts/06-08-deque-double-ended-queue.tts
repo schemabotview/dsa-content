@@ -1,0 +1,7 @@
+Deque — double-ended queue.
+
+A deque — pronounced like the word deck — generalises both the stack and the queue by allowing constant-time push and pop from both ends simultaneously. Python's deque and Kotlin's array-deque are both deques.
+
+A powerful pattern built on the deque is the sliding window maximum. Given an array and a window size, you want the maximum value in each window as it slides from left to right. The naive approach computes the maximum in each window from scratch — linear work per window, quadratic total. With a monotonic deque you can do it in linear time overall.
+
+The deque stores indices and is maintained in decreasing order of their values. When the window slides, you remove the index at the front if it has fallen outside the window. When you add a new element, you pop smaller values from the rear, because they can never be the maximum of any future window — the new element is both larger and more recent. The front of the deque always holds the index of the current window's maximum. Each element is added and removed at most once, giving linear time total.

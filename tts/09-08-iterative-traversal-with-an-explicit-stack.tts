@@ -1,0 +1,7 @@
+Iterative traversal with an explicit stack.
+
+Recursive traversals are clean, but they rely on the call stack and can overflow on very deep trees. You can simulate any depth-first traversal iteratively using an explicit stack — you just manage the stack yourself instead of relying on the language runtime.
+
+For pre-order, you push the root onto your stack. Then you loop: pop a node, record it, push its right child first and then its left child. Because stacks are last-in, first-out, the left child will be processed next — which is exactly what pre-order requires.
+
+For in-order, you walk as far left as possible, pushing each node as you go. When you can go no further left, you pop, record the node, and move to its right child, then repeat. This reproduces the left-then-root-then-right order without any recursive calls.

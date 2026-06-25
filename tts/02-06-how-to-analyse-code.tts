@@ -1,0 +1,7 @@
+How to analyse code.
+
+Four practical rules cover the vast majority of situations.
+
+A single loop over n elements is linear time. Nested loops over n elements are quadratic — one loop inside another, each running n times, gives n squared operations, and three loops deep gives n cubed. Halving the problem at each step gives logarithmic time. And when you have sequential blocks of code — one after the other, not nested — you add their complexities and keep the dominant term. Linear plus quadratic is quadratic. The smaller term disappears.
+
+A practical example: imagine a function that first does a single pass to find the maximum value — that is linear — and then does a nested loop to find all pairs — that is quadratic. The total is linear plus quadratic, which simplifies to quadratic. The linear part becomes invisible at scale.

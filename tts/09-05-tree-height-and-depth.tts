@@ -1,0 +1,7 @@
+Tree height and depth.
+
+Computing the height of a tree is a clean example of recursive thinking. The height of an empty tree is defined as minus one. The height of a leaf is zero. The height of any other node is one plus the maximum of the heights of its left and right subtrees. This definition naturally produces a recursive function — call it on the left child, call it on the right child, take the larger result and add one.
+
+Finding the depth of a specific node follows a similar pattern. You carry a counter that starts at zero and increments with each recursive call. When you reach the target node, the counter holds the depth. If you exhaust the tree without finding the node, you return minus one.
+
+On the sample tree, the height of each leaf is zero, the height of node two is one, and the height of the root four is two. Depth runs the other direction: the root sits at depth zero, its children at depth one, and the four leaves at depth two.

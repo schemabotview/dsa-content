@@ -1,0 +1,9 @@
+Floating-point precision.
+
+Because floats encode values in binary fractions, most decimal numbers cannot be represented exactly — only approximated. This causes the well-known precision problem: adding zero point one and zero point two does not give you exactly zero point three. It gives you zero point three followed by many zeros and then a four, far out in the decimal places.
+
+This is not a Python or Kotlin bug. It is a fundamental consequence of representing decimal numbers in binary — the same way that one third cannot be written exactly in decimal. Most decimal fractions are infinitely repeating in binary.
+
+The practical rule is straightforward: never use float or double for currency or anything requiring exact decimal results. Python provides a Decimal type and Kotlin provides a Big Decimal class for situations where you need exact decimal arithmetic. For everything else — physics calculations, statistics, geometry — the tiny imprecision of a float or double is irrelevant.
+
+For comparisons, never check whether two floating-point values are exactly equal. Instead, check whether their difference is smaller than some very small tolerance — a common threshold is one times ten to the negative ninth power. And if you do need an exact result, wrapping your numbers in the Decimal type, which stores numbers in base ten rather than base two, gives you exactly zero point three.

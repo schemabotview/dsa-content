@@ -1,0 +1,5 @@
+Build heap in linear time.
+
+If you already have an array of values and want to build a heap from them, inserting one at a time takes n log n time. There is a smarter approach: start from the last non-leaf node — which is at index n divided by two, minus one — and apply sift-down to every node from there back to the root.
+
+The key insight is that nodes near the leaves are the majority of the tree, and they require very little work — most need zero or one swaps. The total work across all nodes sums to linear time. This is why Python's heapify function, which converts a list into a heap in place, runs in linear time rather than n log n.

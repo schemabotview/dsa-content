@@ -1,0 +1,7 @@
+Memoization — cache recursive results.
+
+Memoization is the technique of caching the result of each unique subproblem the first time it is computed, and returning the cached result on any subsequent call. This converts the exponential recursion tree into a linear one — each unique input is computed exactly once.
+
+The idea is simple: before computing fib of n, check whether you already computed it. If the answer is in the cache, return it immediately. If not, compute it, store the result in the cache, and return it.
+
+Python's standard library provides a decorator called l-r-u cache — short for least recently used cache — that does this automatically. You place it above any pure function and the runtime handles the caching for you. With it, fib of thirty-five that previously took seconds now runs in microseconds, and you can even call fib of one thousand instantly. In Kotlin, you implement the same idea manually using a mutable map: check the map before recursing, and store each result after computing it. Memoization is the bridge between naive recursion and dynamic programming.

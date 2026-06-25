@@ -1,0 +1,7 @@
+Strings.
+
+A string is a sequence of characters — conceptually a character array, but with one critical difference: strings are immutable in both Python and Kotlin. Once a string is created, it cannot be modified. Any operation that appears to change a string actually creates a brand new string in memory and leaves the original untouched.
+
+To make this tangible, take the string hello world. Index zero gives you the character h. Index minus one gives you the character d, the last character. Slicing from index six through index eleven gives you the substring world. Trying to assign a new character at index zero raises an error — strings cannot be modified in place.
+
+To change the first letter, you have to build a brand new string by concatenating an uppercase H with the slice starting at index one — and that new string lives at a different address in memory. Methods like upper, split, join, replace, starts-with, and count each return a fresh string or a fresh list, never mutating the original.

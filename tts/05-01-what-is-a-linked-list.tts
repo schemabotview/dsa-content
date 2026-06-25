@@ -1,0 +1,7 @@
+What is a linked list.
+
+A linked list is a chain of nodes. Each node is a small object on the heap containing two things: a value — the data being stored — and a pointer, which is a reference to the next node in the chain.
+
+The list itself holds a reference to the first node, called the head. The last node in the chain points to nothing — marking the end of the list. Because nodes are independent heap objects, they can live at completely different memory addresses. There is no requirement for them to be next to each other. The chain is maintained entirely by the next pointers.
+
+Think of a treasure hunt. Each clue tells you the value at the current location and the address of the next clue. You cannot jump directly to clue five — you must follow clues one, two, three, and four first. That is exactly how traversal works in a linked list.

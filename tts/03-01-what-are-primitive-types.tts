@@ -1,0 +1,7 @@
+What are primitive types.
+
+A primitive type is a data type that is built into the language and maps directly to a fixed number of bytes in memory. There is no object wrapping, no extra metadata — just raw bits sitting in a slot.
+
+In statically typed languages like Kotlin, primitives include integers of various sizes, floating-point numbers, booleans, and characters. In Python, everything is an object — there are no true primitives — but the same conceptual types exist, and Python uses them under the hood in its C runtime.
+
+Knowing the size of a type tells you three things: how many bytes it occupies in memory, what range of values it can hold, and what happens if you try to store a value that exceeds that range.

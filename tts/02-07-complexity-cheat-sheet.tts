@@ -1,0 +1,7 @@
+Complexity cheat sheet.
+
+It helps to hold the whole hierarchy in your head, ordered from most efficient to least. Constant time and logarithmic time are effectively free, even at a million elements — index access and binary search live here. Linear time and linearithmic time are still perfectly feasible at a million — a single scan, or a good sort like merge sort or Timsort.
+
+Quadratic time is where things start to hurt at scale — bubble sort and nested-loop solutions are fine for hundreds of elements but slow for a million. And exponential and factorial time — generating all subsets or all permutations — are off the table for anything but the smallest inputs.
+
+The practical takeaway is to know roughly where your algorithm sits on that ladder, because each rung up is a dramatic jump in the work your program has to do.

@@ -1,0 +1,5 @@
+Pattern three — complement lookup.
+
+This is sometimes called the two-pass hash map or one-pass lookup. The two-sum problem illustrates it perfectly. You want to find two numbers that add to a target. The naive approach checks every pair — quadratic time.
+
+With a hash map you make one pass: for each element, check whether its complement — the target minus the current value — is already in the map. If it is, you found your pair. If not, store the current element and move on. One pass, constant-time lookup per element, linear time total. The hash map turns a quadratic search into a linear one — which is exactly why this pattern shows up in so many interview problems.

@@ -1,0 +1,5 @@
+Visualising the call stack in Python.
+
+You can make the unwinding visible by tracing the depth at each call — printing an indent proportional to how deep you are in the recursion. As the function descends, each level prints a little further to the right, and as the function returns, each level reports the value it computed.
+
+The output shows the call going down — deeper and deeper toward the base case — and then returning back up, each level reporting its result. Seeing this descent and ascent on screen is the fastest way to build an intuition for how recursion maps onto the call stack: every call pushes a frame on the way down, and every return pops one on the way back up.

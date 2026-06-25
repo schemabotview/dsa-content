@@ -1,0 +1,7 @@
+Minimum, maximum, successor, and predecessor.
+
+The minimum value in a binary search tree is always the leftmost node. You walk left as far as possible — when there is no more left child, you have reached the smallest value. Maximum is the mirror: walk right until there is no right child.
+
+On the sample tree, walking left from the root eight gives you three, then one — and one has no left child, so one is the minimum. Walking right from the root gives you ten, then fourteen — and fourteen has no right child, so fourteen is the maximum.
+
+The in-order successor of a node is the smallest value that is larger than it — the node you would visit immediately after it in an in-order traversal. If the node has a right subtree, the successor is the minimum of that right subtree. The predecessor is the mirror — the maximum of the left subtree. This successor concept is used directly in the deletion algorithm.

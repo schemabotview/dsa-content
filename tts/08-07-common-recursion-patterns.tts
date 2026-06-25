@@ -1,0 +1,9 @@
+Common recursion patterns.
+
+Recursion appears in a handful of shapes that you will recognise over and over.
+
+The first is divide and conquer. Binary search splits the search space in half at each step. Given a sorted list, you compute the midpoint, compare the target to the midpoint value, and recurse into only the half that could contain the target. Each call halves the problem — logarithmic time, logarithmic stack depth.
+
+The second is structural recursion. When the data structure itself is recursive — like a nested list, a tree, or a graph — recursion is the natural tool. Flattening a deeply nested list is a clean example: for each element, if it is itself a list, recurse into it; otherwise append it to the result. The shape of the code mirrors the shape of the data.
+
+The third is mathematical recursion with an optimisation twist. Fast exponentiation computes a base raised to a power in logarithmic time rather than linear time. The key insight is that x to the power n, when n is even, equals x to the power n over two, squared. This halves the exponent at each step instead of reducing it by one. To compute two to the thirty-second power, naive recursion makes thirty-two multiplications — fast exponentiation makes only six.

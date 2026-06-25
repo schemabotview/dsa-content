@@ -1,0 +1,7 @@
+Stack implementation.
+
+A stack does not need a special data structure — it is just an array or list with restricted access. In Python, a plain list makes a perfectly good stack. The append method pushes to the end — the logical top — and the pop method removes from the end. Both are constant time, because appending and popping at the tail of a dynamic array never require shifting elements.
+
+In Kotlin, the array-deque class serves the same purpose, with add-last for push and remove-last for pop.
+
+The reason the top is always the end of the list, never the front, is performance. Popping from the front would force every remaining element to shift left — linear time. By keeping the top at the end, every stack operation stays constant time.

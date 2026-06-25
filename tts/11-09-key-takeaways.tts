@@ -1,0 +1,9 @@
+Key takeaways.
+
+A min-heap guarantees that every parent is smaller than or equal to its children. The minimum is always at index zero — constant-time access.
+
+Heaps are stored as arrays. Parent, left child, and right child positions are computed with simple index arithmetic — no pointers needed.
+
+Push costs logarithmic time via sift-up. Pop costs logarithmic time via sift-down. Peek costs constant time. Building a heap from scratch costs linear time using bottom-up sift-down.
+
+Python's heap-q module is a min-heap on a plain list — negate values to simulate a max-heap. Kotlin's priority-queue is a min-heap by default; pass a reverse comparator for a max-heap. The three core patterns are: a fixed-size min-heap for k largest, the same trick keyed by frequency for top-k frequent, and a size-k heap seeded with list fronts for merging k sorted lists.

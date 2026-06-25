@@ -1,0 +1,9 @@
+Tree traversals.
+
+Traversal means visiting every node exactly once in a defined order. There are four standard traversals, and all of them take linear time.
+
+The three depth-first traversals all follow a path deep into the tree before backtracking, and all three are naturally recursive. In-order traversal visits the left subtree first, then the current node, then the right subtree. On a binary search tree this visits nodes in ascending sorted order. Pre-order traversal visits the current node first, then the left subtree, then the right — the root is always the first node visited, which is useful for serialising or copying a tree. Post-order traversal visits the left subtree, then the right, then the current node — children are always visited before their parent, which is what you want when deleting a tree or evaluating an expression tree from the bottom up.
+
+Level-order traversal, also called breadth-first traversal, visits nodes level by level from top to bottom and left to right. It uses a queue rather than the call stack. You enqueue the root, then repeatedly dequeue a node, record its value, and enqueue its children — so all nodes at one level are processed before any node at the next.
+
+The code pattern for the depth-first traversals is the same in all three cases. You handle the empty node as the base case, recurse left, recurse right, and combine the results with the current node's value. The only thing that changes is where you place the current node's value — before the recursive calls for pre-order, between them for in-order, or after them for post-order.

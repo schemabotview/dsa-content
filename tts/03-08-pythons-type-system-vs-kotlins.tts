@@ -1,0 +1,9 @@
+Python's type system versus Kotlin's.
+
+The two languages take fundamentally different approaches to types, and the difference matters for how you reason about memory and performance.
+
+Python is dynamically typed — types are checked at runtime, not at compile time. A variable can hold an integer now and a string a moment later. Everything is a heap-allocated object, even a simple integer. Python wraps each integer with type information, a reference count, and the value itself — a small integer like forty-two takes about twenty-eight bytes in Python, compared to four bytes for a raw int in Kotlin. Python never overflows because its integers grow automatically, and any variable can hold the value None.
+
+Kotlin is statically typed — types are checked at compile time and a variable's type cannot change. Local integer variables are true stack-allocated primitives — a Kotlin int is exactly four bytes. Overflow wraps silently. Variables are non-nullable by default — to allow a None-equivalent value, you must explicitly mark the type as nullable with a question mark.
+
+There is one important subtlety on the java virtual machine. When you put a Kotlin int into a list, the virtual machine boxes it — wrapping it in an Integer object on the heap. A list of integers uses roughly four times more memory than a raw integer array, because each element is now a heap object. For performance-critical code with large arrays of numbers, Kotlin's int-array avoids boxing by using a raw array of primitives underneath.

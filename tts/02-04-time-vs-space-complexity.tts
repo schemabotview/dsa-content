@@ -1,0 +1,7 @@
+Time versus space complexity.
+
+Big O applies to two independent resources. Time complexity asks how many operations the algorithm performs as n grows. Space complexity asks how much extra memory the algorithm uses as n grows. The memory used by the input itself is not counted — only the additional memory the algorithm allocates, which is called auxiliary space.
+
+The two are often in tension. A very common trade-off is this: use extra memory, typically a hash map, to avoid redundant computation, and reduce time from quadratic to linear.
+
+The two-sum problem shows this clearly. The brute-force approach checks every pair of numbers with a nested loop — quadratic time, but no extra space. The hash map approach does a single pass and stores each number it has already seen — linear time, but linear extra space. Whether that trade-off is worth it depends on the constraints of your system.

@@ -1,0 +1,5 @@
+Insert and delete — pointer rewiring.
+
+When you insert a new node between node A and node C, you perform exactly two pointer updates. First, you set the new node's next pointer to point to C. Second, you update A's next pointer to point to the new node. The rest of the list is completely undisturbed — it does not matter if the list has ten elements or ten million.
+
+Deletion is equally simple. To remove a node B that sits between A and C, you set A's next pointer to point directly to C, bypassing B entirely. B becomes unreachable and will be reclaimed by the garbage collector. Again, just one pointer change.

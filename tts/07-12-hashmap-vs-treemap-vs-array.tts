@@ -1,0 +1,7 @@
+Hash map versus tree map versus array.
+
+Choose based on what you need beyond fast lookup. A plain hash map gives constant-time access by key but makes no guarantees about the order of keys during iteration. Python's dictionary does preserve insertion order as of version three point seven, but that is not sorted order.
+
+A tree map — Python's sorted-dict from the sorted-containers library, or Kotlin's tree-map — stores keys in sorted order and gives logarithmic time for all operations. Use it when you need both fast lookup and ordered traversal, or when you need range queries — finding all keys between two values, or the next key larger than some threshold.
+
+A plain array beats both when your keys are consecutive integers starting near zero — just use the integer as an index directly. For counting lowercase letters, a fixed array of twenty-six integers is faster and simpler than any map.

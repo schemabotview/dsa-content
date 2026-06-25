@@ -1,0 +1,7 @@
+Stack — last in, first out.
+
+A stack allows access at only one end — the top. The rule is simple: the last element pushed onto the stack is the first one popped off. This is called last in, first out, or L-I-F-O for short.
+
+Think of a stack of plates. You place a new plate on top. You take a plate from the top. You never pull one from the middle. The structure enforces an order: the most recently added item is always the next one to leave.
+
+All four core operations are constant time. Push adds an element to the top. Pop removes and returns the top element. Peek returns the top element without removing it. And is-empty checks whether the stack has any elements. Each of these is a single step regardless of how many elements are in the stack.

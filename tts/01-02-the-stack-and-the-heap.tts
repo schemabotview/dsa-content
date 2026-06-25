@@ -1,0 +1,13 @@
+The stack and the heap.
+
+Your program's memory is divided into two main regions, and they behave very differently from each other.
+
+The first is called the stack. When your program calls a function, a block of memory called a stack frame is pushed onto the stack. That frame holds the function's local variables and its parameters. When the function returns, the frame is popped off and that memory is instantly reclaimed — no cleanup required. The stack is fast, automatically managed, and has a fixed size — typically a few megabytes.
+
+The second region is the heap. The heap is where objects and collections live — anything that needs to grow dynamically or outlive the function that created it. The heap is large and flexible, but slower, because the runtime has to find a free region of the right size whenever you allocate something new. Objects on the heap are reclaimed by the garbage collector once nothing references them anymore.
+
+Think of the stack like a tray of dishes at a cafeteria — you always add and remove from the top, and the structure is perfectly orderly. The heap is more like a parking lot — cars come and go in any slot, in any order, and finding a free space takes a little more work.
+
+Picture a small program with two functions — a main function that defines x and y, and an add function that takes two numbers and returns their sum. When main runs, its frame is pushed with slots for x, y, and total. When main calls add, a new frame is pushed on top, holding a, b, and a local result. The moment add returns, that entire frame is popped — a, b, and result all disappear at once. Control returns to main, and main's frame is the only one left on the stack.
+
+The same pattern holds in Kotlin, where the primitive integers sit directly inside the stack frame. No allocator, no garbage collection — the stack handles all of it automatically.

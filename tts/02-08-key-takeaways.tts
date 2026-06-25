@@ -1,0 +1,9 @@
+Key takeaways.
+
+Big O describes how an algorithm scales with input size — it measures growth, not raw speed. Constants and lower-order terms are dropped, because they become irrelevant at large n. The hierarchy from most to least efficient is: constant, logarithmic, linear, linearithmic, quadratic, exponential.
+
+Time and space complexity are independent dimensions. A faster algorithm often costs more memory, and you choose the trade-off based on your constraints.
+
+Worst case is the default when analysing an algorithm, unless you have a specific reason to reason about the average case.
+
+And the four rules for reading code: a loop is linear, nested loops multiply, halving is logarithmic, and sequential blocks keep the dominant term. From here on, every data structure and algorithm in this course comes with a complexity analysis — it is the lens you will use to evaluate every trade-off.

@@ -1,0 +1,7 @@
+Common array operations.
+
+It helps to map the everyday list operations onto their costs. Start with a small list of five numbers.
+
+Appending an element is instant — one slot at the tail gets filled. Inserting at index two pushes everything from index two onward one slot to the right to make room. Popping from the end is instant again. But popping from index zero forces every remaining element to shift one slot to the left to close the gap at the front — that is the linear-time cost.
+
+Checking whether a value is in the list scans element by element until it finds the target or hits the end — linear time. Sorting calls Timsort under the hood and runs in n log n time, in place. And reversing runs in linear time, swapping pairs from the outside in.

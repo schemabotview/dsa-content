@@ -1,0 +1,1418 @@
+{
+  "concept": "Data Structures & Algorithms",
+  "design": "DESIGN.md",
+  "scenes": [
+    {
+      "id": "dsa",
+      "title": "DSA \u2014 Taxonomy & RAM",
+      "status": "built"
+    }
+  ],
+  "presentations": [
+    {
+      "id": "01-how-computers-store-data",
+      "title": "How Computers Store Data",
+      "notebook": "notebooks/01-how-computers-store-data.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "What is RAM?",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-ram-primitive",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram"
+          ],
+          "audio": "audio/01-01-what-is-ram.wav"
+        },
+        {
+          "heading": "The Stack and the Heap",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/01-02-the-stack-and-the-heap.wav"
+        },
+        {
+          "heading": "Value Types vs Reference Types",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/01-03-value-types-vs-reference-types.wav"
+        },
+        {
+          "heading": "Why This Matters for Data Structures",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-ram-primitive",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram"
+          ],
+          "audio": "audio/01-04-why-this-matters-for-data-structures.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-ram-primitive",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram"
+          ],
+          "audio": "audio/01-05-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "02-complexity-analysis",
+      "title": "Complexity Analysis",
+      "notebook": "notebooks/02-complexity-analysis.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "Why Measure Performance?",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/02-01-why-measure-performance.wav"
+        },
+        {
+          "heading": "Big O Notation",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/02-02-big-o-notation.wav"
+        },
+        {
+          "heading": "The Common Complexity Classes",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/02-03-the-common-complexity-classes.wav"
+        },
+        {
+          "heading": "Time vs Space Complexity",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/02-04-time-vs-space-complexity.wav"
+        },
+        {
+          "heading": "Best, Worst, and Average Case",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/02-05-best-worst-and-average-case.wav"
+        },
+        {
+          "heading": "How to Analyse Code",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/02-06-how-to-analyse-code.wav"
+        },
+        {
+          "heading": "Complexity Cheat Sheet",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/02-07-complexity-cheat-sheet.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/02-08-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "03-primitive-types-and-memory",
+      "title": "Primitive Types & Memory",
+      "notebook": "notebooks/03-primitive-types-and-memory.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "What Are Primitive Types?",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-01-what-are-primitive-types.wav"
+        },
+        {
+          "heading": "Integer Types",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-02-integer-types.wav"
+        },
+        {
+          "heading": "Integer Overflow",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-03-integer-overflow.wav"
+        },
+        {
+          "heading": "Floating-Point Types",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-04-floating-point-types.wav"
+        },
+        {
+          "heading": "Floating-Point Precision",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-05-floating-point-precision.wav"
+        },
+        {
+          "heading": "Boolean",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-06-boolean.wav"
+        },
+        {
+          "heading": "Characters and Text Encoding",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-07-characters-and-text-encoding.wav"
+        },
+        {
+          "heading": "Python's Type System vs Kotlin's",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-08-pythons-type-system-vs-kotlins.wav"
+        },
+        {
+          "heading": "Type Conversion",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-09-type-conversion.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-primitive",
+            "dsa-ram-primitive"
+          ],
+          "focus": [
+            "dsa-ram-primitive"
+          ],
+          "audio": "audio/03-10-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "04-arrays-and-strings",
+      "title": "Arrays & Strings",
+      "notebook": "notebooks/04-arrays-and-strings.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "What is an Array?",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-01-what-is-an-array.wav"
+        },
+        {
+          "heading": "Array Operations and Complexity",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-02-array-operations-and-complexity.wav"
+        },
+        {
+          "heading": "Insert and Delete \u2014 The Shifting Cost",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-03-insert-and-delete-the-shifting-cost.wav"
+        },
+        {
+          "heading": "Arrays in Python \u2014 Dynamic Lists",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-04-arrays-in-python-dynamic-lists.wav"
+        },
+        {
+          "heading": "Common Array Operations",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-05-common-array-operations.wav"
+        },
+        {
+          "heading": "Multi-Dimensional Arrays",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-06-multi-dimensional-arrays.wav"
+        },
+        {
+          "heading": "Strings",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-07-strings.wav"
+        },
+        {
+          "heading": "Efficient String Building",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-08-efficient-string-building.wav"
+        },
+        {
+          "heading": "Common Patterns in Array and String Problems",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-09-common-patterns-in-array-and-string-problems.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/04-10-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "05-linked-lists",
+      "title": "Linked Lists",
+      "notebook": "notebooks/05-linked-lists.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "What is a Linked List?",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-linkedlist",
+            "dsa-ram-linkedlist"
+          ],
+          "focus": [
+            "dsa-ram-linkedlist"
+          ],
+          "audio": "audio/05-01-what-is-a-linked-list.wav"
+        },
+        {
+          "heading": "Linked List vs Array",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-linkedlist",
+            "dsa-ram-linkedlist"
+          ],
+          "focus": [
+            "dsa-ram-linkedlist"
+          ],
+          "audio": "audio/05-02-linked-list-vs-array.wav"
+        },
+        {
+          "heading": "Insert and Delete \u2014 Pointer Rewiring",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-linkedlist",
+            "dsa-ram-linkedlist"
+          ],
+          "focus": [
+            "dsa-ram-linkedlist"
+          ],
+          "audio": "audio/05-03-insert-and-delete-pointer-rewiring.wav"
+        },
+        {
+          "heading": "Singly Linked List \u2014 Implementation",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-linkedlist",
+            "dsa-ram-linkedlist"
+          ],
+          "focus": [
+            "dsa-ram-linkedlist"
+          ],
+          "audio": "audio/05-04-singly-linked-list-implementation.wav"
+        },
+        {
+          "heading": "Doubly Linked List",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-linkedlist",
+            "dsa-ram-linkedlist"
+          ],
+          "focus": [
+            "dsa-ram-linkedlist"
+          ],
+          "audio": "audio/05-05-doubly-linked-list.wav"
+        },
+        {
+          "heading": "Two Classic Linked List Algorithms",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-linkedlist",
+            "dsa-ram-linkedlist"
+          ],
+          "focus": [
+            "dsa-ram-linkedlist"
+          ],
+          "audio": "audio/05-06-two-classic-linked-list-algorithms.wav"
+        },
+        {
+          "heading": "When to Use a Linked List",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-linkedlist",
+            "dsa-ram-linkedlist"
+          ],
+          "focus": [
+            "dsa-ram-linkedlist"
+          ],
+          "audio": "audio/05-07-when-to-use-a-linked-list.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-linkedlist",
+            "dsa-ram-linkedlist"
+          ],
+          "focus": [
+            "dsa-ram-linkedlist"
+          ],
+          "audio": "audio/05-08-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "06-stacks-and-queues",
+      "title": "Stacks & Queues",
+      "notebook": "notebooks/06-stacks-and-queues.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "Stack \u2014 Last In, First Out",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/06-01-stack-last-in-first-out.wav"
+        },
+        {
+          "heading": "Stack Implementation",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/06-02-stack-implementation.wav"
+        },
+        {
+          "heading": "Stack Use Case \u2014 Balanced Parentheses",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/06-03-stack-use-case-balanced-parentheses.wav"
+        },
+        {
+          "heading": "Stack Use Case \u2014 Evaluating Expressions (Monotonic Stack)",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/06-04-stack-use-case-evaluating-expressions-monotonic-stack.wav"
+        },
+        {
+          "heading": "Queue \u2014 First In, First Out",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-queue",
+            "dsa-ram-queue"
+          ],
+          "focus": [
+            "dsa-ram-queue"
+          ],
+          "audio": "audio/06-05-queue-first-in-first-out.wav"
+        },
+        {
+          "heading": "Queue Implementation",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-queue",
+            "dsa-ram-queue"
+          ],
+          "focus": [
+            "dsa-ram-queue"
+          ],
+          "audio": "audio/06-06-queue-implementation.wav"
+        },
+        {
+          "heading": "Queue Use Case \u2014 BFS Level-Order Traversal",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-queue",
+            "dsa-ram-queue"
+          ],
+          "focus": [
+            "dsa-ram-queue"
+          ],
+          "audio": "audio/06-07-queue-use-case-bfs-level-order-traversal.wav"
+        },
+        {
+          "heading": "Deque \u2014 Double-Ended Queue",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-queue",
+            "dsa-ram-queue"
+          ],
+          "focus": [
+            "dsa-ram-queue"
+          ],
+          "audio": "audio/06-08-deque-double-ended-queue.wav"
+        },
+        {
+          "heading": "Stack vs Queue \u2014 Summary",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-queue",
+            "dsa-ram-queue"
+          ],
+          "focus": [
+            "dsa-ram-queue"
+          ],
+          "audio": "audio/06-09-stack-vs-queue-summary.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-stack",
+            "dsa-queue"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/06-10-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "07-hashmaps-and-hashsets",
+      "title": "Hash Maps & Hash Sets",
+      "notebook": "notebooks/07-hashmaps-and-hashsets.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "How Hashing Works",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-01-how-hashing-works.wav"
+        },
+        {
+          "heading": "Hash Collisions",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-02-hash-collisions.wav"
+        },
+        {
+          "heading": "Complexity",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-03-complexity.wav"
+        },
+        {
+          "heading": "Hash Map Operations",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-04-hash-map-operations.wav"
+        },
+        {
+          "heading": "Useful Map Helpers",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-05-useful-map-helpers.wav"
+        },
+        {
+          "heading": "Hash Set",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-06-hash-set.wav"
+        },
+        {
+          "heading": "Pattern 1 \u2014 Frequency Counting",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-07-pattern-1-frequency-counting.wav"
+        },
+        {
+          "heading": "Pattern 2 \u2014 Grouping",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-08-pattern-2-grouping.wav"
+        },
+        {
+          "heading": "Pattern 3 \u2014 Two-Pass Complement Lookup",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-09-pattern-3-two-pass-complement-lookup.wav"
+        },
+        {
+          "heading": "Pattern 4 \u2014 Sliding Window with a Frequency Map",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-10-pattern-4-sliding-window-with-a-frequency-map.wav"
+        },
+        {
+          "heading": "What Can Be a Key?",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-11-what-can-be-a-key.wav"
+        },
+        {
+          "heading": "HashMap vs TreeMap vs Array",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/07-12-hashmap-vs-treemap-vs-array.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-array",
+            "dsa-ram-array"
+          ],
+          "focus": [
+            "dsa-ram-array"
+          ],
+          "audio": "audio/07-13-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "08-recursion-and-the-call-stack",
+      "title": "Recursion & the Call Stack",
+      "notebook": "notebooks/08-recursion-and-the-call-stack.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "The Two Essential Parts",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/08-01-the-two-essential-parts.wav"
+        },
+        {
+          "heading": "The Call Stack",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/08-02-the-call-stack.wav"
+        },
+        {
+          "heading": "Visualising the Call Stack in Python",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/08-03-visualising-the-call-stack-in-python.wav"
+        },
+        {
+          "heading": "Recursion Tree \u2014 Fibonacci",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/08-04-recursion-tree-fibonacci.wav"
+        },
+        {
+          "heading": "Memoization \u2014 Cache Recursive Results",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/08-05-memoization-cache-recursive-results.wav"
+        },
+        {
+          "heading": "Stack Overflow \u2014 Recursion Depth Limits",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/08-06-stack-overflow-recursion-depth-limits.wav"
+        },
+        {
+          "heading": "Common Recursion Patterns",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/08-07-common-recursion-patterns.wav"
+        },
+        {
+          "heading": "Recursion vs Iteration",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/08-08-recursion-vs-iteration.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/08-09-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "09-trees-and-binary-trees",
+      "title": "Trees & Binary Trees",
+      "notebook": "notebooks/09-trees-and-binary-trees.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "Tree Terminology",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/09-01-tree-terminology.wav"
+        },
+        {
+          "heading": "Binary Trees",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/09-02-binary-trees.wav"
+        },
+        {
+          "heading": "Node Implementation",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/09-03-node-implementation.wav"
+        },
+        {
+          "heading": "Tree Traversals",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/09-04-tree-traversals.wav"
+        },
+        {
+          "heading": "Tree Height and Depth",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/09-05-tree-height-and-depth.wav"
+        },
+        {
+          "heading": "Counting Nodes and Leaves",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/09-06-counting-nodes-and-leaves.wav"
+        },
+        {
+          "heading": "Checking if a Tree is Balanced",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/09-07-checking-if-a-tree-is-balanced.wav"
+        },
+        {
+          "heading": "Iterative Traversal with an Explicit Stack",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-stack",
+            "dsa-ram-stack"
+          ],
+          "focus": [
+            "dsa-ram-stack"
+          ],
+          "audio": "audio/09-08-iterative-traversal-with-an-explicit-stack.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/09-09-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "10-binary-search-trees",
+      "title": "Binary Search Trees",
+      "notebook": "notebooks/10-binary-search-trees.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "The BST Property",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-01-the-bst-property.wav"
+        },
+        {
+          "heading": "Node and Tree Setup",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-02-node-and-tree-setup.wav"
+        },
+        {
+          "heading": "Search \u2014 O(h)",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-03-search-o-h.wav"
+        },
+        {
+          "heading": "Insert \u2014 O(h)",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-04-insert-o-h.wav"
+        },
+        {
+          "heading": "Min, Max, Successor, Predecessor",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-05-min-max-successor-predecessor.wav"
+        },
+        {
+          "heading": "Delete \u2014 O(h)",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-06-delete-o-h.wav"
+        },
+        {
+          "heading": "Validate a BST",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-07-validate-a-bst.wav"
+        },
+        {
+          "heading": "Build a Balanced BST from a Sorted Array",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-08-build-a-balanced-bst-from-a-sorted-array.wav"
+        },
+        {
+          "heading": "BST Performance",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-09-bst-performance.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/10-10-key-takeaways.wav"
+        }
+      ]
+    },
+    {
+      "id": "11-heaps-and-priority-queues",
+      "title": "Heaps & Priority Queues",
+      "notebook": "notebooks/11-heaps-and-priority-queues.ipynb",
+      "defaultScene": "dsa",
+      "sections": [
+        {
+          "heading": "Heap Property and Array Storage",
+          "scene": "dsa",
+          "spine": true,
+          "role": "hook",
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/11-01-heap-property-and-array-storage.wav"
+        },
+        {
+          "heading": "Insert and Sift Up \u2014 O(log n)",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/11-02-insert-and-sift-up-o-log-n.wav"
+        },
+        {
+          "heading": "Heap Implementation from Scratch",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/11-03-heap-implementation-from-scratch.wav"
+        },
+        {
+          "heading": "Python's `heapq` \u2014 Built-in Min-Heap",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/11-04-pythons-heapq-built-in-min-heap.wav"
+        },
+        {
+          "heading": "Build Heap \u2014 O(n)",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/11-05-build-heap-o-n.wav"
+        },
+        {
+          "heading": "Canonical Patterns",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/11-06-canonical-patterns.wav"
+        },
+        {
+          "heading": "Heap Sort \u2014 O(n log n)",
+          "scene": "dsa",
+          "spine": true,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/11-07-heap-sort-o-n-log-n.wav"
+        },
+        {
+          "heading": "Complexity Summary",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/11-08-complexity-summary.wav"
+        },
+        {
+          "heading": "Key Takeaways",
+          "scene": "dsa",
+          "spine": false,
+          "highlight": [
+            "dsa-tree",
+            "dsa-ram-tree"
+          ],
+          "focus": [
+            "dsa-ram-tree"
+          ],
+          "audio": "audio/11-09-key-takeaways.wav"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Key takeaways.
+
+A hash map converts a key to a bucket index via a hash function — the index equals the hash of the key modulo the table size. That arithmetic is why lookup is constant time.
+
+Collisions happen when two keys land in the same bucket. Chaining resolves them with a short list per bucket. With a good hash function and a healthy load factor, chains stay length one.
+
+All core operations — get, put, delete, contains — are constant time on average. Treat them as constant time in practice. A hash set is a hash map without values — constant-time membership, deduplication, and set algebra.
+
+Keys must be hashable — immutable types only. The four canonical patterns are: frequency counting with Counter, grouping with a default-dict of lists, complement lookup for pair-finding, and sliding window with a last-seen index map. Use a tree map when you need sorted key order; use a plain hash map when you just need fast lookup.

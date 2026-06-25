@@ -1,0 +1,7 @@
+Stack overflow — recursion depth limits.
+
+The call stack has a fixed maximum size. In Python, the default recursion limit is one thousand frames. Exceeding it raises a recursion error. On the java virtual machine, which runs Kotlin, the stack is typically between five hundred kilobytes and one megabyte — deep recursion throws a stack overflow error.
+
+For algorithms on large inputs this is a real constraint. There are three ways to handle it. The first is to convert to iteration — use an explicit stack, a plain list or deque, instead of the call stack. This moves the recursive structure from implicit to visible, but removes the depth limit entirely. The second is to increase the limit — in Python you can call set-recursion-limit with a larger number, but this is a workaround, not a fix. The third is tail recursion, where the recursive call is the very last operation; some compilers optimise this to reuse one frame, but neither Python nor the java virtual machine does, so it does not help here.
+
+The reliable solution is iteration with an explicit stack. Take an iterative factorial: push the numbers two through n onto a list, set the result to one, then repeatedly pop a value and multiply it into the running result. This is logically identical to the recursive version — each pop replaces a returning frame — but the depth is now bounded by heap memory, not the call stack ceiling.

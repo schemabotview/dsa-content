@@ -1,0 +1,5 @@
+Useful map helpers.
+
+Python provides two especially useful specialisations of the dictionary. The default-dict automatically creates a default value for any missing key — instead of raising a key error, it inserts and returns whatever factory you specify. This is particularly useful for building graphs and grouping problems, where you want to append to a list for each key without checking whether the key exists yet. For example, building a graph with a default-dict of lists lets you append a neighbour to any vertex without ever initialising its list first — the empty list is created lazily on first access.
+
+The Counter is a dictionary subclass designed specifically for counting. Pass it any iterable and it builds a frequency map. Missing keys return zero instead of raising an error. The most-common method returns the top entries by count, sorted descending. Pass it the words apple, banana, apple, cherry, banana, apple and you get back apple mapped to three, banana to two, and cherry to one.

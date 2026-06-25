@@ -1,0 +1,7 @@
+Node implementation.
+
+A tree node holds a value and two optional references: one to a left child and one to a right child. In Python you define a class with these three fields. In Kotlin a data class works perfectly, since data classes automatically implement equality and hashing correctly.
+
+Once you have a node class, building a tree is just nesting constructor calls. The root node receives its value plus references to its left and right subtrees, which are themselves nodes constructed the same way.
+
+To make this concrete, picture a small tree with root four. Four has two children — two on the left and six on the right. Two in turn has children one and three. Six has children five and seven. In code, you build this bottom up: construct the leaf nodes first, then their parents, and finally the root. The result is a balanced binary tree of seven nodes with height two. This is the sample tree we will use to demonstrate every operation that follows.

@@ -1,0 +1,9 @@
+Key takeaways.
+
+The binary search tree property — left subtree smaller, right subtree larger — holds recursively at every node, not just at direct children.
+
+In-order traversal always produces sorted output. This is a direct consequence of the ordering rule.
+
+Search, insert, and delete are all proportional to the tree height — logarithmic on a balanced tree, linear on a degenerate one.
+
+The minimum is the leftmost node, the maximum is the rightmost. The in-order successor is the minimum of the right subtree. Deletion has three cases: remove a leaf directly, promote a single child, or replace a two-child node with its in-order successor. And you validate a binary search tree by threading a valid range through the recursion — not by checking only immediate children.

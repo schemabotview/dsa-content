@@ -1,0 +1,7 @@
+What can be a key.
+
+A key must be hashable — its hash value must be stable and must agree with equality. If two objects are equal, they must have the same hash. If an object is mutable, its hash could change after being stored, which would make it impossible to find again — so mutable types are not hashable.
+
+In Python, integers, floats, strings, and tuples of hashable elements are all hashable and can be keys. Lists, dictionaries, and plain sets cannot — they are mutable. If you need an immutable set as a key, use a frozenset.
+
+In Kotlin, any class that correctly implements hash-code and equals can be a map key. Data classes do this automatically and correctly, which makes them natural map keys.

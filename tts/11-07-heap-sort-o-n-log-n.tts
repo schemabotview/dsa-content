@@ -1,0 +1,5 @@
+Heap sort.
+
+Heap sort works in two phases. First, build a max-heap from the array in linear time. Second, repeatedly swap the root — the current maximum — with the last element of the heap, shrink the heap boundary by one, and sift down to restore the max-heap property. After n minus one swaps, the array is sorted in ascending order.
+
+Heap sort is n log n in all cases and uses no extra space beyond the input array. It is not as cache-friendly as quicksort in practice, which is why it appears less often in production sorting libraries, but it has the strong guarantee of n log n worst-case time without the space overhead of merge sort.

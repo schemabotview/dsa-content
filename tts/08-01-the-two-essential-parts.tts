@@ -1,0 +1,7 @@
+The two essential parts.
+
+Every correct recursive function has exactly two parts. The first is the base case — the condition under which the function stops calling itself and returns a direct answer. Without a base case, the function recurses forever until the call stack overflows. The second is the recursive case — the step where the function calls itself with a smaller or simpler version of the problem, moving toward the base case.
+
+The key insight is that each recursive call must make progress toward the base case. If it does not, you have infinite recursion.
+
+Consider factorial. Factorial of five is five times four times three times two times one — which equals one hundred and twenty. The base case is: if n is less than or equal to one, return one. The recursive case is: return n multiplied by factorial of n minus one. Notice how n minus one is strictly smaller than n — every call moves closer to the base case.

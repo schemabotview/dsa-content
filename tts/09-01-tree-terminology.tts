@@ -1,0 +1,7 @@
+Tree terminology.
+
+Every tree is made of nodes connected by edges. The vocabulary you need is straightforward.
+
+The root is the single node at the top. Every tree has exactly one root. A parent is a node with edges going down to other nodes, and those lower nodes are its children. A leaf is a node with no children at all. Any node that is not a leaf is called an internal node.
+
+The depth of a node is the number of edges from the root down to that node. The root itself has depth zero. The height of a node is the number of edges on the longest path going down from that node to a leaf. The height of the whole tree is the height of the root. A subtree is any node together with all of its descendants — every node is the root of its own subtree.

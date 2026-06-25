@@ -1,0 +1,7 @@
+Arrays in Python — dynamic lists.
+
+Python does not have a fixed-size array in its standard library. The built-in list is a dynamic array — it wraps a fixed-size array under the hood and automatically resizes when it runs out of space.
+
+The growth strategy is called doubling. When the internal array is full and you append another element, Python allocates a new array roughly twice the size, copies all existing elements into it, and frees the old one. This copying is linear — it touches every element. But it happens so rarely, as the array doubles each time, that averaged over many appends the cost per operation works out to constant time. This is called amortised constant time.
+
+The trade-off is memory. A dynamic array often holds more space than it currently needs, because it pre-allocates capacity in anticipation of future growth. Each element in a Python list is also a pointer to a heap object rather than a raw value, which means even a list of integers uses considerably more memory than a raw array of four-byte integers would.

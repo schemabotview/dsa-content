@@ -1,0 +1,5 @@
+Pattern four — sliding window with a frequency map.
+
+This combines a hash map with a sliding window. The longest substring without repeating characters is the textbook example. You keep a map from each character to its most recently seen index.
+
+As the window's right edge advances, if the current character was seen recently enough to still be inside the window, you move the left edge past its previous position. The map gives you that previous position in constant time, so each character is processed once and the whole algorithm runs in linear time.

@@ -1,0 +1,9 @@
+Canonical heap patterns.
+
+There are three canonical heap patterns.
+
+The first is finding the k largest elements. You maintain a min-heap of exactly k elements. For each new value, push it onto the heap. If the heap grows beyond k elements, pop the minimum. At the end, the heap contains the k largest values seen, because anything smaller than the current k-th largest has been evicted. Time is n log k — much better than sorting everything when k is small.
+
+The second is top k frequent elements. First build a frequency map — one pass through the data. Then apply the same fixed-size heap trick, keyed by frequency rather than value. Push each element with its frequency, evict the least frequent when the heap exceeds size k, and at the end the k most frequent elements remain.
+
+The third is merging k sorted lists. You maintain a min-heap seeded with the first element of each list. On every step, pop the minimum from the heap — that is the next element in the merged output — and push the next element from the same list it came from. Repeat until the heap is empty. With k lists and n total elements, this runs in n log k time, because the heap never grows beyond k entries.

@@ -1,0 +1,7 @@
+Stack use case — balanced parentheses.
+
+One of the most classic stack problems is checking whether a string of brackets is balanced — meaning every opening bracket has a corresponding closing bracket of the same type, and they are properly nested.
+
+The algorithm is elegant. Walk the string character by character. When you see an opening bracket — a round, square, or curly one — push it onto the stack. When you see a closing bracket, check whether the top of the stack holds the matching opener. If it does, pop the opener and continue. If it does not, the string is unbalanced. At the end, the stack must be empty — any leftover openers mean unclosed brackets.
+
+The key insight is that brackets must match in reverse order of their opening. The most recently opened bracket must be the first one closed. That is exactly the property a stack provides.

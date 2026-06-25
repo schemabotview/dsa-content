@@ -1,0 +1,9 @@
+Key takeaways.
+
+Ram is a long row of numbered byte-slots. Every value your program uses occupies some of those slots, identified by its starting address.
+
+The stack holds short-lived local variables and is managed automatically — frames are pushed when a function is called and popped when it returns. The heap holds objects and collections that live beyond a single function call and are reclaimed by the garbage collector.
+
+Value types store data directly in the variable. Reference types store an address pointing to the real data on the heap. Copying a reference copies the address, not the object — so both variables end up looking at the same thing.
+
+And finally — data structure performance is not magic. It is a direct consequence of memory layout. Arrays are fast to index because their elements are contiguous. Linked structures are flexible because they use references. Everything else in this course builds on those two ideas.

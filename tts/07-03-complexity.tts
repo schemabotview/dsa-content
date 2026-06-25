@@ -1,0 +1,5 @@
+Complexity.
+
+Collisions are why hash map operations are constant time on average but linear time in the absolute worst case. If every single key happens to hash to the same bucket, you end up scanning a list of all entries — which is linear. In practice this essentially never happens with a good hash function, so you should treat hash map operations as constant time.
+
+The load factor is the ratio of stored entries to the number of buckets. When it grows too high, the table resizes — it allocates a larger array and rehashes every key. Python's dictionary resizes when the load factor exceeds about two-thirds, which keeps average bucket length close to one and preserves constant-time performance.

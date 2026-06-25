@@ -1,0 +1,7 @@
+What is an array.
+
+An array is a fixed-size, contiguous block of memory where every element is the same type and therefore the same size. Elements are stored one after another with no gaps between them.
+
+This layout enables the key property of arrays: constant time random access. To find the element at any index, the processor computes its memory address with simple arithmetic — the base address plus the index multiplied by the element size. No searching, no pointer-chasing — just a single calculation. Whether the index is zero or ten million, that calculation takes the same number of steps.
+
+Picture a row of identical numbered lockers in a corridor. You know the first locker is at position one hundred. Every locker is the same width — say, four units. To reach locker fifty, you go to position one hundred plus fifty times four. You do not walk past lockers one through forty-nine — you jump directly to the right spot. That is exactly how array indexing works.

@@ -1,0 +1,7 @@
+The call stack.
+
+Every function call — recursive or not — pushes a stack frame onto the call stack. The frame stores the function's arguments, its local variables, and the return address — the point in the program where execution should resume once the function finishes.
+
+When a function returns, its frame is popped off the stack and control passes back to the caller. The call stack is a last-in, first-out structure — exactly the same as the stack data structure you saw with stacks and queues.
+
+For factorial of four, the stack grows four frames deep before hitting the base case. At that point the stack unwinds — each frame resumes, multiplies its local n by the result returned from below, and pops. Factorial of one returns one. Factorial of two gets that one, multiplies by two, returns two. Factorial of three gets two, multiplies by three, returns six. Factorial of four gets six, multiplies by four, returns twenty-four.

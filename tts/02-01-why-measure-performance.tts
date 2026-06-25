@@ -1,0 +1,7 @@
+Why measure performance.
+
+Suppose you have a list of one million user records and you need to find one by name. You could scan from the first record to the last — that works. But on average you will check five hundred thousand records before finding the right one. Double the dataset and you double the work. At a billion records, this approach becomes unusable.
+
+Alternatively, if the list is sorted, you could use a strategy that eliminates half the remaining records on every step. At a billion records, that strategy takes about thirty steps — not five hundred million.
+
+Both approaches produce the correct answer. The difference is how they scale. Complexity analysis is the tool that makes this difference visible and quantifiable, before you write a single line of production code.

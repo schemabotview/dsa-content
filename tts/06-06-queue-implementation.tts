@@ -1,0 +1,7 @@
+Queue implementation.
+
+There is an important pitfall in Python. Do not use a plain list as a queue. The list's pop-zero method removes the first element, but it does so by shifting every remaining element one position to the left — linear time. With a large queue this becomes a serious bottleneck.
+
+The correct tool is the deque from Python's collections module, which gives constant-time removal from the front through its pop-left method, and constant-time insertion at the rear through append. In Kotlin, array-deque with add-last and remove-first gives the same constant-time behaviour.
+
+The deque achieves this by being a doubly linked structure of blocks, so neither end ever requires shifting. Whenever you need a queue, reach for the deque, not the list.

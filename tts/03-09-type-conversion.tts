@@ -1,0 +1,7 @@
+Type conversion.
+
+Converting between types is always explicit in both languages. Neither will silently coerce a value in a way that could lose information.
+
+In Python, the int function converts a float to an integer by truncating — dropping the decimal part without rounding. Nine point nine becomes nine, not ten. The float function converts an integer to a float. The string function turns any value into its text representation. And parsing a hex string into an integer requires specifying base sixteen.
+
+In Kotlin, every numeric type has conversion methods like to-long, to-float, to-double, and to-string. Narrowing conversions — going from a larger type to a smaller one — may silently lose information. Converting a long with a value of nine billion to an int wraps around and gives you a completely different number. The compiler will not warn you unless you ask for it explicitly.

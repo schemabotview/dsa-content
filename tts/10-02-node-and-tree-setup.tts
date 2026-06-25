@@ -1,0 +1,7 @@
+Node and tree setup.
+
+A binary search tree node is the same as a binary tree node — a value plus a left and a right reference. What differs is how values are placed: each new value follows the ordering rule down to its position.
+
+Picture a concrete example we will use throughout. Insert the values eight, three, ten, one, six, fourteen, four, seven, and thirteen in that order. Eight becomes the root because it arrives first. Three is smaller than eight, so it goes left. Ten is larger, so it goes right. One is smaller than both eight and three, so it lands as the left child of three. Six is smaller than eight but larger than three, so it lands as the right child of three.
+
+Continuing in the same way, you end up with a tree whose in-order traversal gives one, three, four, six, seven, eight, ten, thirteen, fourteen — sorted, exactly as the property guarantees.

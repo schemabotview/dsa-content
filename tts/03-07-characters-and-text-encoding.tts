@@ -1,0 +1,9 @@
+Characters and text encoding.
+
+A character stores a single letter, digit, or symbol. Under the hood, characters are just numbers — every character is mapped to a numeric code point by a standard called an encoding.
+
+A-S-C-I-I is the oldest and simplest encoding — it maps one hundred and twenty-eight characters to the numbers zero through one hundred and twenty-seven. In A-S-C-I-I, the uppercase letter A is sixty-five, lowercase a is ninety-seven, and the digit zero is forty-eight. The gap between any uppercase letter and its lowercase equivalent is always thirty-two — a fact that comes up surprisingly often in string manipulation problems.
+
+Unicode is the universal standard that covers every character in every language — over one hundred and forty thousand code points. U-T-F eight is the most common way to encode Unicode text, using one to four bytes per character depending on the code point. Python strings are Unicode by default. Kotlin and the java virtual machine use U-T-F sixteen internally, which stores most common characters in two bytes.
+
+One trick appears constantly in data structures and algorithms problems: subtracting the character zero from a digit character gives you its integer value. If you have the character seven, subtracting the character zero gives you the integer seven. This works because digit characters have consecutive code points starting at forty-eight. Likewise, a single emoji is one character in Python, but encoding it to U-T-F eight takes four bytes, because emoji live high in the Unicode range.

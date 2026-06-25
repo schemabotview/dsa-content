@@ -1,0 +1,9 @@
+Boolean.
+
+A boolean holds one of two values: true or false. Logically it needs only one bit, but in practice most languages store it in a full byte — aligning it to a byte boundary makes it faster to access in memory.
+
+Booleans are what comparisons return and what if-statements consume. Every conditional branch in your code ultimately reduces to a boolean.
+
+Python and Kotlin differ in one important way here. Python has the concept of truthiness — any value can be evaluated in a boolean context, not just actual booleans. Zero, an empty string, an empty list, and None all evaluate to false. Everything else evaluates to true. This is convenient but can lead to subtle bugs if you are not careful. Kotlin is stricter — only actual boolean values work in conditions. You cannot pass a list to an if-statement and expect Kotlin to check whether it is empty. You have to be explicit.
+
+There is one quirk worth knowing in Python. The boolean type is a subclass of integer — true behaves like one and false like zero, so adding true plus true actually gives you two.

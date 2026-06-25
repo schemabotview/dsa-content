@@ -1,0 +1,7 @@
+Queue — first in, first out.
+
+A queue allows insertions at one end — the rear — and removals from the other end — the front. The rule is the opposite of a stack: the first element inserted is the first one removed. This is called first in, first out, or F-I-F-O.
+
+Think of a checkout line at a shop. New customers join the back of the queue. The cashier serves the person at the front. The person who has been waiting longest is served next. Nobody cuts in.
+
+All four core operations are constant time: enqueue adds an element at the rear, dequeue removes and returns the element at the front, peek returns the front element without removing it, and is-empty checks whether the queue has any elements.
