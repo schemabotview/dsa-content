@@ -59,9 +59,11 @@ KEYWORD = [
     ("linked-list",       "dsa-cat-linkedlist"),
     ("hash",              "dsa-cat-hashmap"),
     ("bst",               "dsa-cat-bst"),
-    ("heap",              "dsa-cat-heap"),
+    # stack before heap so "The Stack and the Heap" (memory, module 01) frames the
+    # stack, not the heap data structure.
     ("call-stack",        "dsa-cat-stack"),
     ("stack",             "dsa-cat-stack"),
+    ("heap",              "dsa-cat-heap"),
     ("traversal",         "dsa-cat-tree"),
     ("tree",              "dsa-cat-tree"),
     ("integer",           "dsa-grp-primitive"),

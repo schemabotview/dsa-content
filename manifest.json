@@ -27,10 +27,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-cat-heap"
+            "dsa-cat-stack"
           ],
           "focus": [
-            "dsa-cat-heap"
+            "dsa-cat-stack"
           ],
           "audio": "audio/01-02-the-stack-and-the-heap.wav"
         },
