@@ -4,11 +4,6 @@
   "scenes": [
     {
       "id": "dsa",
-      "title": "DSA \u2014 Taxonomy",
-      "status": "built"
-    },
-    {
-      "id": "dsa-catalog",
       "title": "DSA \u2014 Catalog",
       "status": "built"
     }
@@ -25,9 +20,6 @@
           "scene": "dsa",
           "spine": true,
           "role": "hook",
-          "highlight": [
-            "dsa-primitive"
-          ],
           "audio": "audio/01-01-what-is-ram.wav"
         },
         {
@@ -35,7 +27,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-stack"
+            "dsa-cat-heap"
+          ],
+          "focus": [
+            "dsa-cat-heap"
           ],
           "audio": "audio/01-02-the-stack-and-the-heap.wav"
         },
@@ -44,7 +39,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/01-03-value-types-vs-reference-types.wav"
         },
@@ -52,18 +50,12 @@
           "heading": "Why This Matters for Data Structures",
           "scene": "dsa",
           "spine": true,
-          "highlight": [
-            "dsa-primitive"
-          ],
           "audio": "audio/01-04-why-this-matters-for-data-structures.wav"
         },
         {
           "heading": "Key Takeaways",
           "scene": "dsa",
           "spine": false,
-          "highlight": [
-            "dsa-primitive"
-          ],
           "audio": "audio/01-05-key-takeaways.wav"
         }
       ]
@@ -80,7 +72,10 @@
           "spine": true,
           "role": "hook",
           "highlight": [
-            "dsa-array"
+            "dsa-cat-array"
+          ],
+          "focus": [
+            "dsa-cat-array"
           ],
           "audio": "audio/02-01-why-measure-performance.wav"
         },
@@ -89,7 +84,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-array"
+            "dsa-cat-array"
+          ],
+          "focus": [
+            "dsa-cat-array"
           ],
           "audio": "audio/02-02-big-o-notation.wav"
         },
@@ -98,7 +96,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-array"
+            "dsa-cat-array"
+          ],
+          "focus": [
+            "dsa-cat-array"
           ],
           "audio": "audio/02-03-the-common-complexity-classes.wav"
         },
@@ -107,7 +108,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-array"
+            "dsa-cat-array"
+          ],
+          "focus": [
+            "dsa-cat-array"
           ],
           "audio": "audio/02-04-time-vs-space-complexity.wav"
         },
@@ -116,7 +120,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-array"
+            "dsa-cat-array"
+          ],
+          "focus": [
+            "dsa-cat-array"
           ],
           "audio": "audio/02-05-best-worst-and-average-case.wav"
         },
@@ -125,7 +132,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-array"
+            "dsa-cat-array"
+          ],
+          "focus": [
+            "dsa-cat-array"
           ],
           "audio": "audio/02-06-how-to-analyse-code.wav"
         },
@@ -134,7 +144,10 @@
           "scene": "dsa",
           "spine": false,
           "highlight": [
-            "dsa-array"
+            "dsa-cat-array"
+          ],
+          "focus": [
+            "dsa-cat-array"
           ],
           "audio": "audio/02-07-complexity-cheat-sheet.wav"
         },
@@ -143,7 +156,10 @@
           "scene": "dsa",
           "spine": false,
           "highlight": [
-            "dsa-array"
+            "dsa-cat-array"
+          ],
+          "focus": [
+            "dsa-cat-array"
           ],
           "audio": "audio/02-08-key-takeaways.wav"
         }
@@ -161,7 +177,10 @@
           "spine": true,
           "role": "hook",
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-01-what-are-primitive-types.wav"
         },
@@ -170,7 +189,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-02-integer-types.wav"
         },
@@ -179,7 +201,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-03-integer-overflow.wav"
         },
@@ -188,7 +213,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-04-floating-point-types.wav"
         },
@@ -197,7 +225,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-05-floating-point-precision.wav"
         },
@@ -206,7 +237,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-06-boolean.wav"
         },
@@ -215,7 +249,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-07-characters-and-text-encoding.wav"
         },
@@ -224,7 +261,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-08-pythons-type-system-vs-kotlins.wav"
         },
@@ -233,7 +273,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-09-type-conversion.wav"
         },
@@ -242,7 +285,10 @@
           "scene": "dsa",
           "spine": false,
           "highlight": [
-            "dsa-primitive"
+            "dsa-grp-primitive"
+          ],
+          "focus": [
+            "dsa-grp-primitive"
           ],
           "audio": "audio/03-10-key-takeaways.wav"
         }
@@ -252,11 +298,11 @@
       "id": "04-arrays-and-strings",
       "title": "Arrays & Strings",
       "notebook": "notebooks/04-arrays-and-strings.ipynb",
-      "defaultScene": "dsa-catalog",
+      "defaultScene": "dsa",
       "sections": [
         {
           "heading": "What is an Array?",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "role": "hook",
           "highlight": [
@@ -269,7 +315,7 @@
         },
         {
           "heading": "Array Operations and Complexity",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-array"
@@ -281,7 +327,7 @@
         },
         {
           "heading": "Insert and Delete \u2014 The Shifting Cost",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-array"
@@ -293,7 +339,7 @@
         },
         {
           "heading": "Arrays in Python \u2014 Dynamic Lists",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-array"
@@ -305,7 +351,7 @@
         },
         {
           "heading": "Common Array Operations",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-array"
@@ -317,7 +363,7 @@
         },
         {
           "heading": "Multi-Dimensional Arrays",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-matrix"
@@ -329,7 +375,7 @@
         },
         {
           "heading": "Strings",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-array"
@@ -341,7 +387,7 @@
         },
         {
           "heading": "Efficient String Building",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-array"
@@ -353,7 +399,7 @@
         },
         {
           "heading": "Common Patterns in Array and String Problems",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-array"
@@ -365,7 +411,7 @@
         },
         {
           "heading": "Key Takeaways",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": false,
           "highlight": [
             "dsa-cat-array"
@@ -381,11 +427,11 @@
       "id": "05-linked-lists",
       "title": "Linked Lists",
       "notebook": "notebooks/05-linked-lists.ipynb",
-      "defaultScene": "dsa-catalog",
+      "defaultScene": "dsa",
       "sections": [
         {
           "heading": "What is a Linked List?",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "role": "hook",
           "highlight": [
@@ -398,7 +444,7 @@
         },
         {
           "heading": "Linked List vs Array",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-linkedlist"
@@ -410,7 +456,7 @@
         },
         {
           "heading": "Insert and Delete \u2014 Pointer Rewiring",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-linkedlist"
@@ -422,7 +468,7 @@
         },
         {
           "heading": "Singly Linked List \u2014 Implementation",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-linkedlist"
@@ -434,7 +480,7 @@
         },
         {
           "heading": "Doubly Linked List",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-linkedlist"
@@ -446,7 +492,7 @@
         },
         {
           "heading": "Two Classic Linked List Algorithms",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-linkedlist"
@@ -458,7 +504,7 @@
         },
         {
           "heading": "When to Use a Linked List",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-linkedlist"
@@ -470,7 +516,7 @@
         },
         {
           "heading": "Key Takeaways",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": false,
           "highlight": [
             "dsa-cat-linkedlist"
@@ -486,11 +532,11 @@
       "id": "06-stacks-and-queues",
       "title": "Stacks & Queues",
       "notebook": "notebooks/06-stacks-and-queues.ipynb",
-      "defaultScene": "dsa-catalog",
+      "defaultScene": "dsa",
       "sections": [
         {
           "heading": "Stack \u2014 Last In, First Out",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "role": "hook",
           "highlight": [
@@ -503,7 +549,7 @@
         },
         {
           "heading": "Stack Implementation",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-stack"
@@ -515,7 +561,7 @@
         },
         {
           "heading": "Stack Use Case \u2014 Balanced Parentheses",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-stack"
@@ -527,7 +573,7 @@
         },
         {
           "heading": "Stack Use Case \u2014 Evaluating Expressions (Monotonic Stack)",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-stack"
@@ -539,7 +585,7 @@
         },
         {
           "heading": "Queue \u2014 First In, First Out",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-queue"
@@ -551,7 +597,7 @@
         },
         {
           "heading": "Queue Implementation",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-queue"
@@ -563,7 +609,7 @@
         },
         {
           "heading": "Queue Use Case \u2014 BFS Level-Order Traversal",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-queue"
@@ -575,7 +621,7 @@
         },
         {
           "heading": "Deque \u2014 Double-Ended Queue",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-queue"
@@ -587,7 +633,7 @@
         },
         {
           "heading": "Stack vs Queue \u2014 Summary",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": false,
           "highlight": [
             "dsa-cat-queue"
@@ -599,7 +645,7 @@
         },
         {
           "heading": "Key Takeaways",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": false,
           "highlight": [
             "dsa-cat-stack"
@@ -615,11 +661,11 @@
       "id": "07-hashmaps-and-hashsets",
       "title": "Hash Maps & Hash Sets",
       "notebook": "notebooks/07-hashmaps-and-hashsets.ipynb",
-      "defaultScene": "dsa-catalog",
+      "defaultScene": "dsa",
       "sections": [
         {
           "heading": "How Hashing Works",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "role": "hook",
           "highlight": [
@@ -632,7 +678,7 @@
         },
         {
           "heading": "Hash Collisions",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -644,7 +690,7 @@
         },
         {
           "heading": "Complexity",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -656,7 +702,7 @@
         },
         {
           "heading": "Hash Map Operations",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -668,7 +714,7 @@
         },
         {
           "heading": "Useful Map Helpers",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -680,7 +726,7 @@
         },
         {
           "heading": "Hash Set",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -692,7 +738,7 @@
         },
         {
           "heading": "Pattern 1 \u2014 Frequency Counting",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -704,7 +750,7 @@
         },
         {
           "heading": "Pattern 2 \u2014 Grouping",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -716,7 +762,7 @@
         },
         {
           "heading": "Pattern 3 \u2014 Two-Pass Complement Lookup",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -728,7 +774,7 @@
         },
         {
           "heading": "Pattern 4 \u2014 Sliding Window with a Frequency Map",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -740,7 +786,7 @@
         },
         {
           "heading": "What Can Be a Key?",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -752,7 +798,7 @@
         },
         {
           "heading": "HashMap vs TreeMap vs Array",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-hashmap"
@@ -764,7 +810,7 @@
         },
         {
           "heading": "Key Takeaways",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": false,
           "highlight": [
             "dsa-cat-hashmap"
@@ -788,7 +834,10 @@
           "spine": true,
           "role": "hook",
           "highlight": [
-            "dsa-stack"
+            "dsa-cat-stack"
+          ],
+          "focus": [
+            "dsa-cat-stack"
           ],
           "audio": "audio/08-01-the-two-essential-parts.wav"
         },
@@ -797,7 +846,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-stack"
+            "dsa-cat-stack"
+          ],
+          "focus": [
+            "dsa-cat-stack"
           ],
           "audio": "audio/08-02-the-call-stack.wav"
         },
@@ -806,7 +858,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-stack"
+            "dsa-cat-stack"
+          ],
+          "focus": [
+            "dsa-cat-stack"
           ],
           "audio": "audio/08-03-visualising-the-call-stack-in-python.wav"
         },
@@ -815,7 +870,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-tree"
+            "dsa-cat-tree"
+          ],
+          "focus": [
+            "dsa-cat-tree"
           ],
           "audio": "audio/08-04-recursion-tree-fibonacci.wav"
         },
@@ -824,7 +882,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-stack"
+            "dsa-cat-stack"
+          ],
+          "focus": [
+            "dsa-cat-stack"
           ],
           "audio": "audio/08-05-memoization-cache-recursive-results.wav"
         },
@@ -833,7 +894,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-stack"
+            "dsa-cat-stack"
+          ],
+          "focus": [
+            "dsa-cat-stack"
           ],
           "audio": "audio/08-06-stack-overflow-recursion-depth-limits.wav"
         },
@@ -842,7 +906,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-stack"
+            "dsa-cat-stack"
+          ],
+          "focus": [
+            "dsa-cat-stack"
           ],
           "audio": "audio/08-07-common-recursion-patterns.wav"
         },
@@ -851,7 +918,10 @@
           "scene": "dsa",
           "spine": true,
           "highlight": [
-            "dsa-stack"
+            "dsa-cat-stack"
+          ],
+          "focus": [
+            "dsa-cat-stack"
           ],
           "audio": "audio/08-08-recursion-vs-iteration.wav"
         },
@@ -860,7 +930,10 @@
           "scene": "dsa",
           "spine": false,
           "highlight": [
-            "dsa-stack"
+            "dsa-cat-stack"
+          ],
+          "focus": [
+            "dsa-cat-stack"
           ],
           "audio": "audio/08-09-key-takeaways.wav"
         }
@@ -870,11 +943,11 @@
       "id": "09-trees-and-binary-trees",
       "title": "Trees & Binary Trees",
       "notebook": "notebooks/09-trees-and-binary-trees.ipynb",
-      "defaultScene": "dsa-catalog",
+      "defaultScene": "dsa",
       "sections": [
         {
           "heading": "Tree Terminology",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "role": "hook",
           "highlight": [
@@ -887,7 +960,7 @@
         },
         {
           "heading": "Binary Trees",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-tree"
@@ -899,7 +972,7 @@
         },
         {
           "heading": "Node Implementation",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-tree"
@@ -911,7 +984,7 @@
         },
         {
           "heading": "Tree Traversals",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-tree"
@@ -923,7 +996,7 @@
         },
         {
           "heading": "Tree Height and Depth",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-tree"
@@ -935,7 +1008,7 @@
         },
         {
           "heading": "Counting Nodes and Leaves",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-tree"
@@ -947,7 +1020,7 @@
         },
         {
           "heading": "Checking if a Tree is Balanced",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-tree"
@@ -959,7 +1032,7 @@
         },
         {
           "heading": "Iterative Traversal with an Explicit Stack",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-stack"
@@ -971,7 +1044,7 @@
         },
         {
           "heading": "Key Takeaways",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": false,
           "highlight": [
             "dsa-cat-tree"
@@ -987,11 +1060,11 @@
       "id": "10-binary-search-trees",
       "title": "Binary Search Trees",
       "notebook": "notebooks/10-binary-search-trees.ipynb",
-      "defaultScene": "dsa-catalog",
+      "defaultScene": "dsa",
       "sections": [
         {
           "heading": "The BST Property",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "role": "hook",
           "highlight": [
@@ -1004,7 +1077,7 @@
         },
         {
           "heading": "Node and Tree Setup",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-tree"
@@ -1016,7 +1089,7 @@
         },
         {
           "heading": "Search \u2014 O(h)",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-bst"
@@ -1028,7 +1101,7 @@
         },
         {
           "heading": "Insert \u2014 O(h)",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-bst"
@@ -1040,7 +1113,7 @@
         },
         {
           "heading": "Min, Max, Successor, Predecessor",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-bst"
@@ -1052,7 +1125,7 @@
         },
         {
           "heading": "Delete \u2014 O(h)",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-bst"
@@ -1064,7 +1137,7 @@
         },
         {
           "heading": "Validate a BST",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-bst"
@@ -1076,7 +1149,7 @@
         },
         {
           "heading": "Build a Balanced BST from a Sorted Array",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-bst"
@@ -1088,7 +1161,7 @@
         },
         {
           "heading": "BST Performance",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-bst"
@@ -1100,7 +1173,7 @@
         },
         {
           "heading": "Key Takeaways",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": false,
           "highlight": [
             "dsa-cat-bst"
@@ -1116,11 +1189,11 @@
       "id": "11-heaps-and-priority-queues",
       "title": "Heaps & Priority Queues",
       "notebook": "notebooks/11-heaps-and-priority-queues.ipynb",
-      "defaultScene": "dsa-catalog",
+      "defaultScene": "dsa",
       "sections": [
         {
           "heading": "Heap Property and Array Storage",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "role": "hook",
           "highlight": [
@@ -1133,7 +1206,7 @@
         },
         {
           "heading": "Insert and Sift Up \u2014 O(log n)",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-heap"
@@ -1145,7 +1218,7 @@
         },
         {
           "heading": "Heap Implementation from Scratch",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-heap"
@@ -1157,7 +1230,7 @@
         },
         {
           "heading": "Python's `heapq` \u2014 Built-in Min-Heap",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-heap"
@@ -1169,7 +1242,7 @@
         },
         {
           "heading": "Build Heap \u2014 O(n)",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-heap"
@@ -1181,7 +1254,7 @@
         },
         {
           "heading": "Canonical Patterns",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-heap"
@@ -1193,7 +1266,7 @@
         },
         {
           "heading": "Heap Sort \u2014 O(n log n)",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": true,
           "highlight": [
             "dsa-cat-heap"
@@ -1205,7 +1278,7 @@
         },
         {
           "heading": "Complexity Summary",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": false,
           "highlight": [
             "dsa-cat-heap"
@@ -1217,7 +1290,7 @@
         },
         {
           "heading": "Key Takeaways",
-          "scene": "dsa-catalog",
+          "scene": "dsa",
           "spine": false,
           "highlight": [
             "dsa-cat-heap"
